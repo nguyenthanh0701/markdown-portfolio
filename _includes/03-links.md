@@ -1,1 +1,1 @@
-![Thanh Nguyen 's profile] (https://github.com/nguyenthanh0701)
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
