@@ -1,0 +1,2 @@
+$ rm -rf .git/index.lock
+Sửa lỗi git add ko vô

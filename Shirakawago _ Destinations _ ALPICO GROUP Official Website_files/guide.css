@@ -1,0 +1,4973 @@
+@charset "UTF-8";
+/* ==============================================
+  Tourism Guide
+  @mixin ============================================= */
+#guide-page .c-mainVisual {
+  background: url("../img/guide/mainvisual_img.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#guide-page .block {
+  margin-bottom: 74px;
+  padding: 66px 0 0;
+}
+
+#guide-page .block__inner {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+#guide-page .block__head {
+  margin-bottom: 38px;
+}
+
+#guide-page .block__head__title {
+  margin-bottom: 28px;
+}
+
+#guide-page .block__head__title span {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#guide-page .block__head__content {
+  font-size: 14px;
+  line-height: 1.371428;
+  letter-spacing: 0;
+}
+
+#guide-page .block__head__links {
+  margin: 32px auto 70px;
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+#guide-page .block__head__link {
+  display: inline-block;
+  width: 175px;
+  border: 1px solid #2c4197;
+  background-color: #2c4197;
+  text-align: center;
+  transition: background .3s;
+}
+
+#guide-page .block__head__link a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 7px 0 6px;
+}
+
+#guide-page .block__head__link span {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.025em;
+  transition: color .3s;
+}
+
+#guide-page .block__head__link:hover {
+  background: #fff;
+}
+
+#guide-page .block__head__link:hover span {
+  color: #2c4197;
+}
+
+#guide-page .block__head__link ~ .block__head__link {
+  margin-left: 15px;
+}
+
+#guide-page .block__head__link-blank {
+  position: relative;
+}
+
+#guide-page .block__head__link-blank:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  width: 12px;
+  height: 12px;
+  background: url("../img/common/blank_icon_w.png") no-repeat 0 0;
+  background-size: contain;
+  transition: background .3s;
+  pointer-events: none;
+}
+
+#guide-page .block__head__link-blank:hover:before {
+  background: url("../img/common/blank_icon_b.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .block__content__list {
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+#guide-page .block__content__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 24.19355%;
+  text-align: center;
+}
+
+#guide-page .block__content__item + .block__content__item {
+  margin-left: 1.07527%;
+}
+
+#guide-page .block__content__item:nth-child(5n) {
+  margin-left: 0;
+}
+
+#guide-page .block__content__item:nth-child(n+5) {
+  margin-top: 10px;
+}
+
+#guide-page .block__content__item a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 55px;
+  border: 1px solid #2c4197;
+  background-color: #2c4197;
+  transition: background .3s;
+}
+
+#guide-page .block__content__item a:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 14px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/common/arrow_icon_w.png") no-repeat 0 0;
+  background-size: contain;
+  transition: background .3s;
+}
+
+#guide-page .block__content__item a:hover {
+  background-color: #fff;
+}
+
+#guide-page .block__content__item a:hover:after {
+  background: url("../img/common/arrow_icon_b.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .block__content__item a:hover span {
+  color: #2c4197;
+}
+
+#guide-page .block__content__item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  padding: 0 26px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0;
+  transition: color .3s;
+}
+
+#guide-page .contentTab__inner {
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+#guide-page .contentTab__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  padding: 26px 0;
+  background-color: #f2f6f8;
+  transition: background .3s;
+  cursor: pointer;
+}
+
+#guide-page .contentTab__item:hover, #guide-page .contentTab__item.is-current {
+  background-color: #919191;
+}
+
+#guide-page .contentTab__item:hover .contentTab__item__txt span, #guide-page .contentTab__item.is-current .contentTab__item__txt span {
+  color: #fff;
+}
+
+#guide-page .contentTab__item__txt {
+  text-align: center;
+}
+
+#guide-page .contentTab__item__txt span {
+  position: relative;
+  color: #919191;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0;
+  transition: color .3s;
+}
+
+#guide-page .contentTab__item__txt span:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  transition: background .3s;
+}
+
+#guide-page .contentTab__item-accommodations:hover, #guide-page .contentTab__item-accommodations.is-current {
+  background-color: #7e3d86;
+}
+
+#guide-page .contentTab__item-accommodations:hover .contentTab__item__txt span:before, #guide-page .contentTab__item-accommodations.is-current .contentTab__item__txt span:before {
+  background: url("../img/guide/icon_accommodations_w.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .contentTab__item-accommodations .contentTab__item__txt span {
+  padding-left: 40px;
+  color: #7e3d86;
+}
+
+#guide-page .contentTab__item-accommodations .contentTab__item__txt span:before {
+  content: "";
+  background: url("../img/guide/icon_accommodations.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .contentTab__item-sightseeing:hover, #guide-page .contentTab__item-sightseeing.is-current {
+  background-color: #559681;
+}
+
+#guide-page .contentTab__item-sightseeing:hover .contentTab__item__txt span:before, #guide-page .contentTab__item-sightseeing.is-current .contentTab__item__txt span:before {
+  background: url("../img/guide/icon_sightseeing_w.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .contentTab__item-sightseeing .contentTab__item__txt span {
+  padding-left: 40px;
+  color: #559681;
+}
+
+#guide-page .contentTab__item-sightseeing .contentTab__item__txt span:before {
+  content: "";
+  background: url("../img/guide/icon_sightseeing.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .contentTab__item-activity:hover, #guide-page .contentTab__item-activity.is-current {
+  background-color: #ebac20;
+}
+
+#guide-page .contentTab__item-activity:hover .contentTab__item__txt span:before, #guide-page .contentTab__item-activity.is-current .contentTab__item__txt span:before {
+  background: url("../img/guide/icon_activity_w.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .contentTab__item-activity .contentTab__item__txt span {
+  padding-left: 40px;
+  color: #ebac20;
+}
+
+#guide-page .contentTab__item-activity .contentTab__item__txt span:before {
+  content: "";
+  background: url("../img/guide/icon_activity.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .contentList {
+  width: 100%;
+  padding-bottom: 92px;
+}
+
+#guide-page .contentList__inner {
+  position: relative;
+  display: none;
+  width: 100%;
+  padding-bottom: 92px;
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+#guide-page .contentList__inner.is-current {
+  display: block;
+}
+
+#guide-page .contentList__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  background-color: #26397e;
+  overflow: hidden;
+}
+
+#guide-page .contentList__item a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: 100% auto;
+}
+
+#guide-page .contentList__item a:hover .contentList__item__img {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#guide-page .contentList__item.is-wide a {
+  background: no-repeat center center;
+  background-size: auto 100%;
+}
+
+#guide-page .contentList__item.is-long a {
+  background: no-repeat center center;
+  background-size: 100% auto;
+}
+
+#guide-page .contentList__item__img {
+  background: url("../img/common/content_img_shadow.png") no-repeat 0 0;
+  background-size: cover;
+  opacity: .2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  transition: opacity .3s;
+}
+
+#guide-page .contentList__item__img img {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+#guide-page .contentList__itemTxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  max-width: 232px;
+  width: 100%;
+  text-align: center;
+}
+
+#guide-page .contentList__itemTxt span {
+  color: #fff;
+}
+
+#guide-page .contentList__itemTxt__title {
+  max-width: 150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#guide-page .contentList__itemTxt__title span {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.025em;
+}
+
+#guide-page .contentList__itemTxt__content {
+  margin-top: 34px;
+  text-align: left;
+}
+
+#guide-page .contentList__itemTxt__content span {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.025em;
+}
+
+#guide-page .contentList__nopost {
+  padding: 100px 0;
+  text-align: center;
+}
+
+#guide-page .contentList__nopost p {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.025em;
+}
+
+#guide-page .contentMore {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#guide-page.is-IE .block__content__item a {
+  padding: 20px 0 18px;
+}
+
+/* ==============================================
+  Tourism Guide - area -
+  @mixin ============================================= */
+#guide-page .mainVisual {
+  position: relative;
+  height: 620px;
+  background-color: #ccc;
+}
+
+#guide-page .mainVisual:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-color: rgba(204, 204, 204, 0.1);
+}
+
+#guide-page .mainVisual__subtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  max-width: 970px;
+  width: 100%;
+  margin-top: -17px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+#guide-page .mainVisual__subtitle span {
+  color: #fff;
+  font-size: 15px;
+}
+
+#guide-page .mainVisual__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  max-width: 970px;
+  width: 100%;
+  margin-top: 17px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+#guide-page .mainVisual__title span {
+  color: #fff;
+  font-size: 40px;
+}
+
+#guide-page .mainVisual__inner {
+  width: 100%;
+  height: 100%;
+}
+
+#guide-page .mainVisual__slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#guide-page .mainVisual__slide img {
+  display: block;
+}
+
+#guide-page .mainVisual__slide__img {
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+#guide-page .mainVisual__slide__img img {
+  display: none;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  width: 100%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+#guide-page .mainVisual__slide__img.is-pos1 {
+  background-position: left bottom;
+}
+
+#guide-page .mainVisual__slide__img.is-pos2 {
+  background-position: center bottom;
+}
+
+#guide-page .mainVisual__slide__img.is-pos3 {
+  background-position: right bottom;
+}
+
+#guide-page .mainVisual__slide__img.is-pos4 {
+  background-position: left center;
+}
+
+#guide-page .mainVisual__slide__img.is-pos5 {
+  background-position: center center;
+}
+
+#guide-page .mainVisual__slide__img.is-pos6 {
+  background-position: right center;
+}
+
+#guide-page .mainVisual__slide__img.is-pos7 {
+  background-position: left top;
+}
+
+#guide-page .mainVisual__slide__img.is-pos8 {
+  background-position: center top;
+}
+
+#guide-page .mainVisual__slide__img.is-pos9 {
+  background-position: right top;
+}
+
+#guide-page .mainVisual__pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0;
+}
+
+#guide-page .mainVisual__pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-size: 0;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#guide-page .mainVisual__pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+#guide-page.is-area .contentMap {
+  height: 585px;
+  background-color: #2c4197;
+}
+
+#guide-page .contentMapLink {
+  margin: 70px auto;
+  text-align: center;
+}
+
+#guide-page .contentMapBtn {
+  display: inline-block;
+  vertical-align: top;
+  width: 210px;
+  text-align: center;
+}
+
+#guide-page .contentMapBtn a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 19px 0;
+  border: 1px solid #2c4197;
+  background-color: #2c4197;
+  font-size: 0;
+  transition: background .3s;
+}
+
+#guide-page .contentMapBtn a:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 14px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/common/arrow_icon_w.png") no-repeat 0 0;
+  background-size: contain;
+  transition: background .3s;
+}
+
+#guide-page .contentMapBtn a:hover {
+  background-color: #fff;
+}
+
+#guide-page .contentMapBtn a:hover:after {
+  background: url("../img/common/arrow_icon_b.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .contentMapBtn a:hover span {
+  color: #2c4197;
+}
+
+#guide-page .contentMapBtn span {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0;
+  transition: color .3s;
+}
+
+#guide-page.is-IE .contentMapBtn a {
+  padding: 22px 0 16px;
+}
+
+#guide-page.is-IE .contentTab__item {
+  padding: 28px 0 24px;
+}
+
+#guide-page.is-IE .contentTab__item__txt span:before {
+  margin-top: -2px;
+}
+
+/* ==============================================
+  Tourism Guide - detail -
+  @mixin ============================================= */
+#guide-page.is-detail .block__head__title {
+  margin-bottom: 36px;
+}
+
+#guide-page.is-detail .block__head__title span {
+  line-height: 1.1;
+}
+
+#guide-page.is-detail .contentMap {
+  height: 400px;
+  background-color: #2c4197;
+}
+
+#guide-page.is-detail .contentMapDetail {
+  max-width: 970px;
+  margin: 34px auto;
+  padding: 0 20px;
+}
+
+#guide-page.is-detail .contentMapDetail__txt + .contentMapDetail__txt {
+  margin-top: 30px;
+}
+
+#guide-page.is-detail .contentMapDetail__head {
+  margin-bottom: 4px;
+}
+
+#guide-page.is-detail .contentMapDetail__head span {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+#guide-page.is-detail .contentMapDetail__content span {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+#guide-page.is-detail .contentMapDetail__content a {
+  color: #000;
+  text-decoration: underline;
+  transition: opacity .3s;
+}
+
+#guide-page.is-detail .contentMapDetail__content a:hover {
+  opacity: .5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+#guide-page.is-detail .contentRoute {
+  margin-bottom: 30px;
+  background-color: #f2f6f8;
+}
+
+#guide-page.is-detail .contentRoute__inner {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 69px 20px;
+}
+
+#guide-page.is-detail .contentRoute__block + .contentRoute__block {
+  margin-top: 70px;
+}
+
+#guide-page.is-detail .contentRoute__head {
+  margin-bottom: 36px;
+}
+
+#guide-page.is-detail .contentRoute__head span {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+#guide-page.is-detail .contentRoute__node {
+  position: relative;
+  height: 46px;
+  background-color: #2c4197;
+  font-size: 0;
+  letter-spacing: 0;
+  transition: background .3s;
+}
+
+#guide-page.is-detail .contentRoute__node a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#guide-page.is-detail .contentRoute__node:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  background: url("../img/common/arrow_icon_both_w.png") no-repeat 0 0;
+  background-size: contain;
+  transition: background .3s;
+}
+
+#guide-page.is-detail .contentRoute__node:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 14px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/common/arrow_icon_w.png") no-repeat 0 0;
+  background-size: contain;
+  transition: background .3s;
+}
+
+#guide-page.is-detail .contentRoute__node + .contentRoute__node {
+  margin-top: 10px;
+}
+
+#guide-page.is-detail .contentRoute__node:hover {
+  background-color: #fff;
+}
+
+#guide-page.is-detail .contentRoute__node:hover:before {
+  background: url("../img/common/arrow_icon_both_b.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page.is-detail .contentRoute__node:hover:after {
+  background: url("../img/common/arrow_icon_b.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page.is-detail .contentRoute__node:hover .contentRoute__item__txt span {
+  color: #2c4197;
+}
+
+#guide-page.is-detail .contentRoute__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+#guide-page.is-detail .contentRoute__item__txt {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+#guide-page.is-detail .contentRoute__item__txt span {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  transition: color .3s;
+}
+
+#guide-page.is-detail .contentRoute__node-1st:before {
+  content: none;
+}
+
+#guide-page.is-detail .contentRoute__node-1st .contentRoute__item {
+  width: 100%;
+}
+
+#guide-page.is-detail .contentRoute__node-3rd:before {
+  content: none;
+}
+
+#guide-page.is-detail .contentRoute__node-3rd .contentRoute__item {
+  position: relative;
+  width: 33.33333%;
+}
+
+#guide-page.is-detail .contentRoute__node-3rd .contentRoute__item + .contentRoute__item:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  background: url("../img/common/arrow_icon_both_w.png") no-repeat 0 0;
+  background-size: contain;
+  transition: background .3s;
+}
+
+#guide-page.is-detail .contentRoute__node-3rd:hover .contentRoute__item + .contentRoute__item:before {
+  background: url("../img/common/arrow_icon_both_b.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page.is-detail .contentGuide {
+  margin-bottom: 68px;
+}
+
+#guide-page.is-detail .contentGuide__inner {
+  position: relative;
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 69px 20px;
+}
+
+#guide-page.is-detail .contentGuide__head {
+  margin-bottom: 38px;
+}
+
+#guide-page.is-detail .contentGuide__head span {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+#guide-page.is-detail .contentGuide__list {
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+#guide-page.is-detail .contentGuide__node {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 21.935483%;
+  height: 290px;
+}
+
+#guide-page.is-detail .contentGuide__node + .contentGuide__node {
+  margin-left: 3.978494%;
+}
+
+#guide-page.is-detail .contentGuide__node a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#guide-page.is-detail .contentGuide__node a:hover .contentGuide__node__link span {
+  text-decoration: underline;
+}
+
+#guide-page.is-detail .contentGuide__node__img {
+  width: 100%;
+  height: 185px;
+  margin-bottom: 13px;
+  overflow: hidden;
+}
+
+#guide-page.is-detail .contentGuide__node__img img {
+  width: 100%;
+  height: auto;
+}
+
+#guide-page.is-detail .contentGuide__node__img.is-wide img {
+  width: auto;
+  height: 100%;
+}
+
+#guide-page.is-detail .contentGuide__node__img.is-long img {
+  width: 100%;
+  height: auto;
+}
+
+#guide-page.is-detail .contentGuide__node__head span {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.166666;
+  letter-spacing: -0.025em;
+}
+
+#guide-page.is-detail .contentGuide__node__link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-right: 22px;
+  padding-bottom: 3px;
+  text-align: right;
+}
+
+#guide-page.is-detail .contentGuide__node__link:before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  right: -2px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/common/arrow_icon_b.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page.is-detail .contentGuide__node__link span {
+  color: #2c4197;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+#guide-page.is-detail .contentGuide__container.is-current ~ .contentGuide__arrow {
+  display: block;
+}
+
+#guide-page.is-detail .contentGuide__container.is-current ~ .contentGuide__pagination {
+  display: block;
+}
+
+#guide-page.is-detail .contentGuide__slide {
+  width: 21.935483%;
+  height: 290px;
+}
+
+#guide-page.is-detail .contentGuide__slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#guide-page.is-detail .contentGuide__slide a:hover .contentGuide__node__link span {
+  text-decoration: underline;
+}
+
+#guide-page.is-detail .contentGuide__slide__img {
+  display: inline-block;
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+}
+
+#guide-page.is-detail .contentGuide__slide__img img {
+  width: 100%;
+  height: auto;
+}
+
+#guide-page.is-detail .contentGuide__slide__img.is-wide img {
+  width: auto;
+  height: 100%;
+}
+
+#guide-page.is-detail .contentGuide__slide__img.is-long img {
+  width: 100%;
+  height: auto;
+}
+
+#guide-page.is-detail .contentGuide__slide__head {
+  margin: 10px auto 0;
+}
+
+#guide-page.is-detail .contentGuide__slide__head span {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.166666;
+  letter-spacing: -0.025em;
+}
+
+#guide-page.is-detail .contentGuide__slide__link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-right: 22px;
+  padding-bottom: 3px;
+  text-align: right;
+}
+
+#guide-page.is-detail .contentGuide__slide__link:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 12px;
+  background: url("../img/common/arrow_icon_b.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page.is-detail .contentGuide__slide__link span {
+  color: #2c4197;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+#guide-page.is-detail .contentGuide__arrow {
+  display: none;
+  position: absolute;
+  top: 214px;
+  z-index: 10;
+  width: 28px;
+  height: 44px;
+  background: url("../img/common/arrow_slide_b.png") no-repeat center center;
+  background-size: contain;
+  transition: opacity .3s;
+}
+
+#guide-page.is-detail .contentGuide__arrow:hover {
+  opacity: .5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+#guide-page.is-detail .contentGuide__arrow-prev {
+  left: -50px;
+  transform: rotate(180deg);
+}
+
+#guide-page.is-detail .contentGuide__arrow-next {
+  right: -50px;
+}
+
+#guide-page.is-detail .contentGuide__pagination {
+  display: none;
+  position: static;
+  bottom: auto;
+  left: auto;
+  margin-top: 34px;
+}
+
+#guide-page.is-detail .contentGuide__pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  border: 2px solid #2c4197;
+  background-color: transparent;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#guide-page.is-detail .contentGuide__pagination .swiper-pagination-bullet-active {
+  background-color: #2c4197;
+}
+
+#guide-page.is-detail .contentMore {
+  position: static;
+  bottom: auto;
+  margin-bottom: 98px;
+  text-align: center;
+}
+
+#guide-page.is-detail.is-IE .block__head__link a {
+  padding: 9px 0 4px;
+}
+
+#guide-page.is-detail.is-IE .contentRoute__item__txt {
+  padding-top: 4px;
+}
+
+@media screen and (max-width: 750px) {
+  /* ==============================================
+  Tourism Guide SP
+  @mixin ============================================= */
+  #guide-page .c-mainVisual {
+    background: url("../img/guide/mainvisual_img.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  #guide-page .block {
+    margin-bottom: 60px;
+    margin-bottom: 16vw;
+    padding: 33px 17px 0;
+    padding: 8.8vw 4.66667vw 0;
+  }
+  #guide-page .block__inner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0;
+    letter-spacing: 0;
+  }
+  #guide-page .block__head {
+    margin-bottom: 35px;
+    margin-bottom: 9.33333vw;
+  }
+  #guide-page .block__head__title {
+    margin-bottom: 11px;
+    margin-bottom: 3.06667vw;
+  }
+  #guide-page .block__head__title span {
+    font-size: 5.33vw;
+    font-weight: normal;
+    line-height: 6.4vw;
+    letter-spacing: 0;
+  }
+  #guide-page .block__head__content {
+    font-size: 12px;
+    font-size: 3.2vw;
+    line-height: 1.23;
+    letter-spacing: -0.025em;
+  }
+  #guide-page .block__head__links {
+    margin: 35px auto 0;
+    margin: 9.33333vw auto 0;
+    font-size: 0;
+    letter-spacing: 0;
+  }
+  #guide-page .block__head__link {
+    width: 47.794117%;
+    border: 1px solid #2c4197;
+    background-color: #2c4197;
+    text-align: center;
+    transition: none;
+  }
+  #guide-page .block__head__link a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    padding: 2.66667vw 0;
+  }
+  #guide-page .block__head__link span {
+    color: #fff;
+    font-size: 14px;
+    font-size: 3.73333vw;
+    letter-spacing: 0;
+    transition: none;
+  }
+  #guide-page .block__head__link:hover {
+    background: #2c4197;
+  }
+  #guide-page .block__head__link:hover span {
+    color: #fff;
+  }
+  #guide-page .block__head__link ~ .block__head__link {
+    margin-left: 4.411764%;
+  }
+  #guide-page .block__head__link-blank {
+    position: relative;
+    background-color: #fff;
+  }
+  #guide-page .block__head__link-blank span {
+    color: #2c4197;
+  }
+  #guide-page .block__head__link-blank:before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    top: 4.26667vw;
+    right: 10px;
+    right: 2.66667vw;
+    width: 9px;
+    width: 2.4vw;
+    height: 9px;
+    height: 2.4vw;
+    background: url("../img/common/blank_icon_b_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .block__head__link-blank:hover {
+    background-color: #fff;
+  }
+  #guide-page .block__head__link-blank:hover span {
+    color: #2c4197;
+  }
+  #guide-page .block__head__link-blank:hover:before {
+    background: url("../img/common/blank_icon_b_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .block__content__list {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+  #guide-page .block__content__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 48.52941%;
+    text-align: center;
+  }
+  #guide-page .block__content__item + .block__content__item {
+    margin-left: 0;
+  }
+  #guide-page .block__content__item:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  #guide-page .block__content__item:nth-child(n+5) {
+    margin-top: 0;
+  }
+  #guide-page .block__content__item:nth-child(2n) {
+    margin-left: 2.94118%;
+  }
+  #guide-page .block__content__item:nth-child(n+3) {
+    margin-top: 10px;
+    margin-top: 2.66667vw;
+  }
+  #guide-page .block__content__item a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 35px;
+    height: 9.33333vw;
+    border: 1px solid #2c4197;
+    background-color: #2c4197;
+    transition: none;
+  }
+  #guide-page .block__content__item a:after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    top: 4.53333vw;
+    right: 18px;
+    right: 4.8vw;
+    width: 6px;
+    width: 1.6vw;
+    height: 9px;
+    height: 2.4vw;
+    background: url("../img/common/arrow_icon_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+    transition: none;
+  }
+  #guide-page .block__content__item a:hover {
+    background-color: #2c4197;
+  }
+  #guide-page .block__content__item a:hover:after {
+    background: url("../img/common/arrow_icon_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .block__content__item a:hover span {
+    color: #fff;
+  }
+  #guide-page .block__content__item span {
+    color: #fff;
+    font-size: 14px;
+    font-size: 3.73333vw;
+    line-height: 1;
+    letter-spacing: 0;
+    transition: none;
+  }
+  #guide-page .contentTab__inner {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+  #guide-page .contentTab__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 18px 0 18px;
+    padding: 4.93333vw 0 4.8vw;
+    background-color: #f2f6f8;
+    transition: none;
+  }
+  #guide-page .contentTab__item:hover {
+    background-color: #fff;
+  }
+  #guide-page .contentTab__item:hover .contentTab__item__txt span {
+    color: #919191;
+  }
+  #guide-page .contentTab__item.is-current {
+    background-color: #919191;
+  }
+  #guide-page .contentTab__item.is-current .contentTab__item__txt span {
+    color: #fff;
+  }
+  #guide-page .contentTab__item.is-current:hover {
+    background-color: #919191;
+  }
+  #guide-page .contentTab__item.is-current:hover .contentTab__item__txt span {
+    color: #fff;
+  }
+  #guide-page .contentTab__item__txt {
+    text-align: center;
+  }
+  #guide-page .contentTab__item__txt span {
+    color: #919191;
+    font-size: 13px;
+    font-size: 3.6vw;
+    line-height: 1;
+    letter-spacing: 0;
+    transition: none;
+  }
+  #guide-page .contentTab__item__txt span:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    width: 8vw;
+    height: 30px;
+    height: 8vw;
+    transition: none;
+  }
+  #guide-page .contentTab__item-accommodations {
+    background-color: #f2f6f8;
+  }
+  #guide-page .contentTab__item-accommodations:hover {
+    background-color: #f2f6f8;
+  }
+  #guide-page .contentTab__item-accommodations:hover .contentTab__item__txt span {
+    color: #7e3d86;
+  }
+  #guide-page .contentTab__item-accommodations:hover .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_accommodations_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-accommodations.is-current {
+    background-color: #7e3d86;
+  }
+  #guide-page .contentTab__item-accommodations.is-current .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_accommodations_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-accommodations.is-current:hover {
+    background-color: #7e3d86;
+  }
+  #guide-page .contentTab__item-accommodations.is-current:hover .contentTab__item__txt span {
+    coloe: #fff;
+  }
+  #guide-page .contentTab__item-accommodations.is-current:hover .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_accommodations_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-accommodations .contentTab__item__txt span {
+    padding-left: 38px;
+    padding-left: 10.13333vw;
+    color: #7e3d86;
+  }
+  #guide-page .contentTab__item-accommodations .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_accommodations_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-sightseeing {
+    background-color: #f2f6f8;
+  }
+  #guide-page .contentTab__item-sightseeing:hover {
+    background-color: #f2f6f8;
+  }
+  #guide-page .contentTab__item-sightseeing:hover .contentTab__item__txt span {
+    color: #559681;
+  }
+  #guide-page .contentTab__item-sightseeing:hover .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_sightseeing_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-sightseeing.is-current {
+    background-color: #559681;
+  }
+  #guide-page .contentTab__item-sightseeing.is-current .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_sightseeing_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-sightseeing.is-current:hover {
+    background-color: #559681;
+  }
+  #guide-page .contentTab__item-sightseeing.is-current:hover .contentTab__item__txt span {
+    coloe: #fff;
+  }
+  #guide-page .contentTab__item-sightseeing.is-current:hover .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_sightseeing_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-sightseeing .contentTab__item__txt span {
+    padding-left: 38px;
+    padding-left: 10.13333vw;
+    color: #559681;
+  }
+  #guide-page .contentTab__item-sightseeing .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_sightseeing_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-activity {
+    background-color: #f2f6f8;
+  }
+  #guide-page .contentTab__item-activity:hover {
+    background-color: #f2f6f8;
+  }
+  #guide-page .contentTab__item-activity:hover .contentTab__item__txt span {
+    color: #ebac20;
+  }
+  #guide-page .contentTab__item-activity:hover .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_activity_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-activity.is-current {
+    background-color: #ebac20;
+  }
+  #guide-page .contentTab__item-activity.is-current .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_activity_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-activity.is-current:hover {
+    background-color: #ebac20;
+  }
+  #guide-page .contentTab__item-activity.is-current:hover .contentTab__item__txt span {
+    coloe: #fff;
+  }
+  #guide-page .contentTab__item-activity.is-current:hover .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_activity_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentTab__item-activity .contentTab__item__txt span {
+    padding-left: 38px;
+    padding-left: 10.13333vw;
+    color: #ebac20;
+  }
+  #guide-page .contentTab__item-activity .contentTab__item__txt span:before {
+    background: url("../img/guide/icon_activity_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentList {
+    width: 100%;
+    padding-bottom: 13.33vw;
+  }
+  #guide-page .contentList__inner {
+    position: relative;
+    width: 100%;
+    padding-bottom: 76px;
+    padding-bottom: 20.4vw;
+    font-size: 0;
+    letter-spacing: 0;
+  }
+  #guide-page .contentList__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    background-color: #26397e;
+  }
+  #guide-page .contentList__item a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+  }
+  #guide-page .contentList__item a:hover .contentList__item__img {
+    opacity: .2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  }
+  #guide-page .contentList__item__img {
+    background: url("../img/common/content_img_shadow.png") no-repeat 0 0;
+    background-size: cover;
+    opacity: .2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    transition: none;
+  }
+  #guide-page .contentList__item__img img {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    z-index: -1;
+    width: 100%;
+    height: auto;
+  }
+  #guide-page .contentList__itemTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    max-width: 157px;
+    max-width: 42vw;
+    width: 100%;
+    text-align: center;
+  }
+  #guide-page .contentList__itemTxt span {
+    color: #fff;
+  }
+  #guide-page .contentList__itemTxt__title {
+    max-width: 115px;
+    max-width: 30.66667vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #guide-page .contentList__itemTxt__title span {
+    font-size: 13px;
+    font-size: 3.6vw;
+    line-height: 16px;
+    line-height: 4.4vw;
+    letter-spacing: -0.025em;
+  }
+  #guide-page .contentList__itemTxt__content {
+    margin-top: 17px;
+    margin-top: 4.53333vw;
+    text-align: left;
+  }
+  #guide-page .contentList__itemTxt__content span {
+    font-size: 12px;
+    font-size: 3.2vw;
+    line-height: 14.4px;
+    line-height: 3.84vw;
+    letter-spacing: -0.025em;
+  }
+  #guide-page .contentList__nopost {
+    padding: 100px 0;
+    padding: 26.66667vw 0;
+    text-align: center;
+  }
+  #guide-page .contentList__nopost p {
+    font-size: 13px;
+    font-size: 3.6vw;
+    line-height: 16px;
+    line-height: 4.4vw;
+    letter-spacing: -0.025em;
+  }
+  #guide-page .contentMore {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #guide-page .contentBtn {
+    display: inline-block;
+    width: 300px;
+    width: 80vw;
+  }
+  #guide-page.is-IE .block__content__item a {
+    padding: 14px 0;
+    padding: 4.26667vw 0 3.2vw;
+  }
+  #guide-page.is-IE .contentTab__item {
+    padding: 21px 0 15px;
+    padding: 5.6vw 0 4.13333vw;
+  }
+  #guide-page.is-IE .contentTab__item__txt span:before {
+    margin-top: -3px;
+    margin-top: -0.8vw;
+  }
+  #guide-page.is-IE .block__head__link a {
+    padding: 12px 0 7px;
+    padding: 3.33333vw 0 2vw;
+  }
+  #guide-page.is-Android .block__content__item a {
+    padding: 15px 0 13px;
+    padding: 4vw 0 3.46667vw;
+  }
+  #guide-page.is-Android .block__head__link a {
+    padding: 12px 0 7px;
+    padding: 3.33333vw 0 2vw;
+  }
+  /* ==============================================
+  Tourism Guide - area -
+  @mixin ============================================= */
+  #guide-page .mainVisual {
+    width: 100%;
+    height: 275px;
+    height: 73.33333vw;
+  }
+  #guide-page .mainVisual__inner {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #guide-page .mainVisual__subtitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-top: 30px;
+    margin-top: 8vw;
+    padding: 0 17px;
+    padding: 0 4.53333vw;
+    text-align: left;
+  }
+  #guide-page .mainVisual__subtitle span {
+    color: #fff;
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+  #guide-page .mainVisual__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-top: 48px;
+    margin-top: 12.8vw;
+    padding: 0 17px;
+    padding: 0 4.53333vw;
+  }
+  #guide-page .mainVisual__title span {
+    color: #fff;
+    font-size: 24px;
+    font-size: 6.4vw;
+    line-height: 1.25;
+    letter-spacing: 0;
+  }
+  #guide-page .mainVisual__slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #guide-page .mainVisual__slide img {
+    display: block;
+  }
+  #guide-page .mainVisual__slide__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+  }
+  #guide-page .mainVisual__slide__title span {
+    color: #fff;
+    color-font-size: 24px;
+    color-font-size: 6.4vw;
+  }
+  #guide-page .mainVisual__slide__img {
+    width: 100%;
+    height: 100%;
+    background: no-repeat 0 0;
+    background-size: cover;
+  }
+  #guide-page .mainVisual__slide__img img {
+    display: none;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    width: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  #guide-page .mainVisual__pagination {
+    position: absolute;
+    bottom: 10px;
+    bottom: 2.8vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+  }
+  #guide-page .mainVisual__pagination .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin: 0 4px;
+    margin: 0 1.06667vw;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 0;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page .mainVisual__pagination .swiper-pagination-bullet-active {
+    background-color: #fff;
+  }
+  #guide-page.is-area .contentMap {
+    height: 256px;
+    height: 68.4vw;
+    background-color: #2c4197;
+  }
+  #guide-page .contentMapLink {
+    margin: 38px auto 60px;
+    margin: 10.13333vw auto 16vw;
+    text-align: center;
+  }
+  #guide-page .contentMapBtn {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    width: 80vw;
+    text-align: center;
+  }
+  #guide-page .contentMapBtn a {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 13px 0 13px;
+    padding: 3.6vw 0 3.46667vw;
+    border: 1px solid #2c4197;
+    background-color: #2c4197;
+    font-size: 0;
+    transition: none;
+  }
+  #guide-page .contentMapBtn a:after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    top: 4.26667vw;
+    right: 9px;
+    right: 2.53333vw;
+    width: 6px;
+    width: 1.6vw;
+    height: 10px;
+    height: 2.66667vw;
+    background: url("../img/common/arrow_icon_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+    transition: none;
+  }
+  #guide-page .contentMapBtn a:hover {
+    background-color: #2c4197;
+  }
+  #guide-page .contentMapBtn a:hover:after {
+    background: url("../img/common/arrow_icon_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .contentMapBtn a:hover span {
+    color: #fff;
+  }
+  #guide-page .contentMapBtn span {
+    color: #fff;
+    font-size: 15px;
+    font-size: 4vw;
+    line-height: 1;
+    letter-spacing: 0;
+    transition: none;
+  }
+  #guide-page.is-IE .contentMapBtn a {
+    padding: 15px 0 11px;
+    padding: 4.13333vw 0 2.93333vw;
+  }
+  #guide-page.is-Android .contentMapBtn a {
+    padding: 15px 0 11px;
+    padding: 4.13333vw 0 2.93333vw;
+  }
+  /* ==============================================
+  Tourism Guide - detail -
+  @mixin ============================================= */
+  #guide-page.is-detail .block {
+    margin-bottom: 30px;
+    margin-bottom: 8vw;
+  }
+  #guide-page.is-detail .block__head__title {
+    margin-bottom: 18px;
+    margin-bottom: 4.8vw;
+  }
+  #guide-page.is-detail .block__head__title span {
+    line-height: 1.1;
+  }
+  #guide-page.is-detail .contentMap {
+    height: 256px;
+    height: 68.4vw;
+    background-color: #2c4197;
+  }
+  #guide-page.is-detail .contentMapDetail {
+    max-width: 100%;
+    margin: 20px auto 35px;
+    margin: 5.33333vw auto 9.33333vw;
+    padding: 0 20px;
+    padding: 0 5.33333vw;
+  }
+  #guide-page.is-detail .contentMapDetail__txt + .contentMapDetail__txt {
+    margin-top: 12px;
+    margin-top: 4.26667vw;
+  }
+  #guide-page.is-detail .contentMapDetail__head {
+    margin-bottom: 8px;
+  }
+  #guide-page.is-detail .contentMapDetail__head span {
+    font-size: 12px;
+    font-size: 3.2vw;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+  #guide-page.is-detail .contentMapDetail__content span {
+    font-size: 12px;
+    font-size: 3.2vw;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+  #guide-page.is-detail .contentMapDetail__content a {
+    color: #000;
+    text-decoration: underline;
+    transition: none;
+  }
+  #guide-page.is-detail .contentMapDetail__content a:hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page.is-detail .contentRoute {
+    margin-bottom: 0;
+    background-color: #f2f6f8;
+  }
+  #guide-page.is-detail .contentRoute__inner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 35px 15px 34px;
+    padding: 9.33333vw 4vw 9.06667vw;
+  }
+  #guide-page.is-detail .contentRoute__block + .contentRoute__block {
+    margin-top: 31px;
+    margin-top: 8.26667vw;
+  }
+  #guide-page.is-detail .contentRoute__head {
+    margin-bottom: 18px;
+    margin-bottom: 4.8vw;
+  }
+  #guide-page.is-detail .contentRoute__head span {
+    font-size: 20px;
+    font-size: 5.33333vw;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+  #guide-page.is-detail .contentRoute__node {
+    position: relative;
+    height: 42px;
+    height: 11.33333vw;
+    background-color: #2c4197;
+    font-size: 0;
+    letter-spacing: 0;
+    transition: none;
+  }
+  #guide-page.is-detail .contentRoute__node a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #guide-page.is-detail .contentRoute__node:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    width: 5.33333vw;
+    height: 20px;
+    height: 5.33333vw;
+    background: url("../img/common/arrow_icon_both_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+    transition: none;
+  }
+  #guide-page.is-detail .contentRoute__node:after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    top: 4.26667vw;
+    right: 9px;
+    right: 2.4vw;
+    width: 6px;
+    width: 1.6vw;
+    height: 10px;
+    height: 2.66667vw;
+    background: url("../img/common/arrow_icon_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+    transition: none;
+  }
+  #guide-page.is-detail .contentRoute__node + .contentRoute__node {
+    margin-top: 20px;
+    margin-top: 5.33333vw;
+  }
+  #guide-page.is-detail .contentRoute__node:hover {
+    background-color: #2c4197;
+  }
+  #guide-page.is-detail .contentRoute__node:hover:before {
+    background: url("../img/common/arrow_icon_both_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page.is-detail .contentRoute__node:hover:after {
+    background: url("../img/common/arrow_icon_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page.is-detail .contentRoute__node:hover .contentRoute__item__txt span {
+    color: #fff;
+  }
+  #guide-page.is-detail .contentRoute__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+  }
+  #guide-page.is-detail .contentRoute__item__txt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 30px;
+    padding: 0 8vw;
+  }
+  #guide-page.is-detail .contentRoute__item__txt span {
+    color: #fff;
+    font-size: 12px;
+    font-size: 3.2vw;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    transition: none;
+  }
+  #guide-page.is-detail .contentRoute__node-1st:before {
+    content: none;
+  }
+  #guide-page.is-detail .contentRoute__node-1st .contentRoute__item {
+    width: 100%;
+  }
+  #guide-page.is-detail .contentRoute__node-3rd:before {
+    content: none;
+  }
+  #guide-page.is-detail .contentRoute__node-3rd .contentRoute__item {
+    width: 33.33333%;
+  }
+  #guide-page.is-detail .contentRoute__node-3rd .contentRoute__item + .contentRoute__item:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    width: 5.33333vw;
+    height: 20px;
+    height: 5.33333vw;
+    background: url("../img/common/arrow_icon_both_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+    transition: none;
+  }
+  #guide-page.is-detail .contentRoute__node-3rd:hover .contentRoute__item + .contentRoute__item:before {
+    background: url("../img/common/arrow_icon_both_w_sp.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page.is-detail .contentGuide {
+    margin-bottom: 47px;
+    margin-bottom: 12.53333vw;
+  }
+  #guide-page.is-detail .contentGuide__inner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 35px 20px 31px;
+    padding: 9.33333vw 5.33333vw 8.26667vw;
+  }
+  #guide-page.is-detail .contentGuide__head {
+    margin-bottom: 16px;
+    margin-bottom: 4.26667vw;
+  }
+  #guide-page.is-detail .contentGuide__head span {
+    font-size: 20px;
+    font-size: 5.33333vw;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+  #guide-page.is-detail .contentGuide__list {
+    display: none;
+  }
+  #guide-page.is-detail .contentGuide__slide {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  #guide-page.is-detail .contentGuide__slide__img {
+    display: inline-block;
+    width: 200px;
+    width: 53.33333vw;
+    height: 182px;
+    height: 48.66667vw;
+    overflow: hidden;
+  }
+  #guide-page.is-detail .contentGuide__slide__img img {
+    width: 100%;
+    height: auto;
+  }
+  #guide-page.is-detail .contentGuide__slide__img.is-wide img {
+    width: auto;
+    height: 100%;
+  }
+  #guide-page.is-detail .contentGuide__slide__img.is-long img {
+    width: 100%;
+    height: auto;
+  }
+  #guide-page.is-detail .contentGuide__slide__head {
+    width: 250px;
+    width: 66.66667vw;
+    margin: 10px auto 0;
+  }
+  #guide-page.is-detail .contentGuide__slide__head span {
+    color: #000;
+    font-size: 12px;
+    font-size: 3.2vw;
+    line-height: 1.2;
+    letter-spacing: 0.025em;
+  }
+  #guide-page.is-detail .contentGuide__slide__link {
+    display: none;
+  }
+  #guide-page.is-detail .contentGuide__arrow {
+    position: absolute;
+    top: 151px;
+    top: 40.4vw;
+    z-index: 10;
+    width: 14px;
+    width: 3.73333vw;
+    height: 22px;
+    height: 5.86667vw;
+    background: url("../img/common/arrow_slide_b.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page.is-detail .contentGuide__arrow-prev {
+    left: 30px;
+    left: 8.13333vw;
+    transform: rotate(180deg);
+  }
+  #guide-page.is-detail .contentGuide__arrow-next {
+    right: 30px;
+    right: 8.13333vw;
+  }
+  #guide-page.is-detail .contentGuide__pagination {
+    position: static;
+    bottom: auto;
+    left: auto;
+    margin-top: 17px;
+    margin-top: 4.53333vw;
+  }
+  #guide-page.is-detail .contentGuide__pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    margin: 0 1.33333vw;
+    border: 2px solid #2c4197;
+    background-color: transparent;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page.is-detail .contentGuide__pagination .swiper-pagination-bullet-active {
+    background-color: #2c4197;
+  }
+  #guide-page.is-detail .contentGuide__googleMap {
+    margin-top: 16px;
+    margin-top: 4.26667vw;
+    text-align: center;
+  }
+  #guide-page.is-detail .contentGuide__googleMap span {
+    font-size: 12px;
+    font-size: 3.2vw;
+    line-height: 1;
+    letter-spacing: 0.025em;
+  }
+  #guide-page.is-detail .contentMore {
+    margin-bottom: 49px;
+    margin-bottom: 13.06667vw;
+    text-align: center;
+  }
+  #guide-page.is-detail.is-IE .block__head__link a {
+    padding: 3.2vw 0 2.13333vw;
+  }
+  #guide-page.is-detail.is-IE .contentRoute__item__txt {
+    padding-top: 3px;
+    padding-top: 0.8vw;
+  }
+}
+
+/* ==============================================
+  共通
+  Kamikochi - Tourism Guide
+  tateyama_kurobe - Tourism Guide
+  @mixin ============================================= */
+#guide-page .area-kamikochi .content__head,
+#guide-page .area-tateyama_kurobe .content__head {
+  max-width: 970px;
+  margin: 0 auto 35px;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+#guide-page .area-kamikochi .content__title span,
+#guide-page .area-tateyama_kurobe .content__title span {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+#guide-page .area-kamikochi .mainVisual,
+#guide-page .area-tateyama_kurobe .mainVisual {
+  height: 626px;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+#guide-page .area-kamikochi .mainVisual__inner,
+#guide-page .area-tateyama_kurobe .mainVisual__inner {
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+#guide-page .area-kamikochi .mainVisual__titleWrapper,
+#guide-page .area-tateyama_kurobe .mainVisual__titleWrapper {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  z-index: 10;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+#guide-page .area-kamikochi .mainVisual__title,
+#guide-page .area-tateyama_kurobe .mainVisual__title {
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 0;
+  max-width: 100%;
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: translate3d(0, 0, 0);
+}
+
+#guide-page .area-kamikochi .mainVisual__title span,
+#guide-page .area-tateyama_kurobe .mainVisual__title span {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+#guide-page .area-kamikochi .mainVisual__subtitle,
+#guide-page .area-tateyama_kurobe .mainVisual__subtitle {
+  line-height: 1;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto 15px;
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: translate3d(0, 0, 0);
+}
+
+#guide-page .area-kamikochi .mainVisual__subtitle span,
+#guide-page .area-tateyama_kurobe .mainVisual__subtitle span {
+  font-size: 18px;
+}
+
+#guide-page .area-kamikochi .mainVisual__map,
+#guide-page .area-tateyama_kurobe .mainVisual__map {
+  width: 100%;
+  max-width: 970px;
+  height: 100%;
+  padding: 0 20px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#guide-page .area-kamikochi .mainVisual__map__item,
+#guide-page .area-tateyama_kurobe .mainVisual__map__item {
+  background: url("../img/guide/kamikochi/mainvisual_map.png") no-repeat 0 0;
+  background-size: contain;
+  width: 209px;
+  height: 238px;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+
+#guide-page .area-kamikochi .block__head,
+#guide-page .area-tateyama_kurobe .block__head {
+  margin-bottom: 80px;
+}
+
+#guide-page .area-kamikochi .block__head__title,
+#guide-page .area-tateyama_kurobe .block__head__title {
+  margin-bottom: 10px;
+}
+
+#guide-page .area-kamikochi .block__head__title-under,
+#guide-page .area-tateyama_kurobe .block__head__title-under {
+  font-size: 18px;
+  line-height: 1;
+  margin: 0 0 30px;
+}
+
+#guide-page .area-kamikochi .block__content,
+#guide-page .area-tateyama_kurobe .block__content {
+  margin-top: 40px;
+}
+
+#guide-page .area-kamikochi .block__content__list,
+#guide-page .area-tateyama_kurobe .block__content__list {
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+#guide-page .area-kamikochi .block__content__item,
+#guide-page .area-tateyama_kurobe .block__content__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 32.47312%;
+  height: 53px;
+  text-align: center;
+  position: relative;
+}
+
+#guide-page .area-kamikochi .block__content__item + .block__content__item,
+#guide-page .area-tateyama_kurobe .block__content__item + .block__content__item {
+  margin-left: 1.29032%;
+}
+
+#guide-page .area-kamikochi .block__content__item:hover .block__content__itemBadge,
+#guide-page .area-tateyama_kurobe .block__content__item:hover .block__content__itemBadge {
+  transform: rotate(-16deg);
+}
+
+#guide-page .area-kamikochi .block__content__item a,
+#guide-page .area-tateyama_kurobe .block__content__item a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #2c4197;
+  background-color: #2c4197;
+  transition: background .3s;
+}
+
+#guide-page .area-kamikochi .block__content__item a:after,
+#guide-page .area-tateyama_kurobe .block__content__item a:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 14px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/common/arrow_icon_w.png") no-repeat 0 0;
+  background-size: contain;
+  transition: background .3s;
+}
+
+#guide-page .area-kamikochi .block__content__item a:hover,
+#guide-page .area-tateyama_kurobe .block__content__item a:hover {
+  background-color: #fff;
+}
+
+#guide-page .area-kamikochi .block__content__item a:hover:after,
+#guide-page .area-tateyama_kurobe .block__content__item a:hover:after {
+  background: url("../img/common/arrow_icon_b.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .block__content__item a:hover span,
+#guide-page .area-tateyama_kurobe .block__content__item a:hover span {
+  color: #2c4197;
+}
+
+#guide-page .area-kamikochi .block__content__item span,
+#guide-page .area-tateyama_kurobe .block__content__item span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0;
+  transition: color .3s;
+}
+
+#guide-page .area-kamikochi .block__content__itemBadge,
+#guide-page .area-tateyama_kurobe .block__content__itemBadge {
+  color: #2c4188;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 17px;
+  width: 86px;
+  height: 87px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  will-change: transform;
+  transform: rotate(0);
+  transition: transform .3s;
+  background: url("../img/guide/kamikochi/area_badge.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .block__content__itemBadge-10,
+#guide-page .area-tateyama_kurobe .block__content__itemBadge-10 {
+  left: -10px;
+}
+
+#guide-page .area-kamikochi .block__content__itemBadge-30,
+#guide-page .area-tateyama_kurobe .block__content__itemBadge-30 {
+  left: -30px;
+}
+
+#guide-page .area-kamikochi .content-area,
+#guide-page .area-tateyama_kurobe .content-area {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#guide-page .area-kamikochi .content-area__inner,
+#guide-page .area-tateyama_kurobe .content-area__inner {
+  width: 100%;
+  max-width: 970px;
+  padding: 70px 0 0;
+  margin: 0 auto;
+}
+
+#guide-page .area-kamikochi .content-area__title,
+#guide-page .area-tateyama_kurobe .content-area__title {
+  padding: 0 20px;
+}
+
+#guide-page .area-kamikochi .content-area__map,
+#guide-page .area-tateyama_kurobe .content-area__map {
+  line-height: 0;
+  text-align: center;
+}
+
+#guide-page .area-kamikochi .content-area__map img,
+#guide-page .area-tateyama_kurobe .content-area__map img {
+  width: 100%;
+  height: auto;
+}
+
+#guide-page .area-kamikochi .content-where__inner,
+#guide-page .area-tateyama_kurobe .content-where__inner {
+  width: 100%;
+  max-width: 970px;
+  padding: 70px 20px;
+  margin: 0 auto;
+}
+
+#guide-page .area-kamikochi .content-where__map,
+#guide-page .area-tateyama_kurobe .content-where__map {
+  position: relative;
+  line-height: 0;
+  margin: -50px 0 0;
+}
+
+#guide-page .area-kamikochi .content-where__map__img,
+#guide-page .area-tateyama_kurobe .content-where__map__img {
+  position: relative;
+}
+
+#guide-page .area-kamikochi .content-where__map__download,
+#guide-page .area-tateyama_kurobe .content-where__map__download {
+  position: absolute;
+  right: 35px;
+  bottom: 60px;
+  width: 49px;
+  height: 49px;
+  transition: .3s;
+}
+
+#guide-page .area-kamikochi .content-where__map__download:after,
+#guide-page .area-tateyama_kurobe .content-where__map__download:after {
+  content: "";
+  display: inline-block;
+  background: #2C4197 url("../img/guide/kamikochi/where_btn_dl.svg") no-repeat 0 0;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #2C4197;
+  border-radius: 100px;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  transition: .2s;
+}
+
+#guide-page .area-kamikochi .content-where__map__download:hover:after,
+#guide-page .area-tateyama_kurobe .content-where__map__download:hover:after {
+  background: url("../img/guide/kamikochi/where_btn_dl_hv.svg") no-repeat 0 0;
+  background-size: contain;
+  transform: translate3d(0, 5px, 0);
+}
+
+#guide-page .area-kamikochi .content-where__map__download-text,
+#guide-page .area-tateyama_kurobe .content-where__map__download-text {
+  color: #2c4181;
+  font-size: 14px;
+  line-height: 1;
+  white-space: nowrap;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#guide-page .area-kamikochi .content-where__item,
+#guide-page .area-tateyama_kurobe .content-where__item {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  width: 47px;
+  height: 60px;
+}
+
+#guide-page .area-kamikochi .content-where__item:before,
+#guide-page .area-tateyama_kurobe .content-where__item:before {
+  content: "";
+  background: url("../img/guide/kamikochi/icon_fuki01_hv_shadow.svg") no-repeat center;
+  background-size: contain !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  width: 24px;
+  height: 30px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  transform: translate3d(0, 0, 0);
+  transition: 0.2s cubic-bezier(0.5, 2.5, 1, 1);
+}
+
+#guide-page .area-kamikochi .content-where__item:after,
+#guide-page .area-tateyama_kurobe .content-where__item:after {
+  content: "";
+  background: url("../img/guide/kamikochi/icon_fuki01.svg") no-repeat center;
+  background-size: contain !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  width: 24px;
+  height: 30px;
+  transform: translate3d(0, 0, 0);
+  transition: 0.2s cubic-bezier(0.5, 2.5, 1, 1);
+}
+
+#guide-page .area-kamikochi .content-where__item.is-active,
+#guide-page .area-tateyama_kurobe .content-where__item.is-active {
+  pointer-events: none;
+  z-index: 11;
+}
+
+#guide-page .area-kamikochi .content-where__item.is-active:before,
+#guide-page .area-tateyama_kurobe .content-where__item.is-active:before {
+  opacity: .7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  width: 47px;
+  height: 60px;
+  transform: translate3d(2px, 2px, 0);
+}
+
+#guide-page .area-kamikochi .content-where__item.is-active:after,
+#guide-page .area-tateyama_kurobe .content-where__item.is-active:after {
+  background: url("../img/guide/kamikochi/icon_fuki01_hv.svg") no-repeat center;
+  width: 47px;
+  height: 60px;
+}
+
+#guide-page .area-kamikochi .content-where__item-1:after,
+#guide-page .area-tateyama_kurobe .content-where__item-1:after {
+  background: url("../img/guide/kamikochi/icon_fuki01.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-1.is-active:after,
+#guide-page .area-tateyama_kurobe .content-where__item-1.is-active:after {
+  background: url("../img/guide/kamikochi/icon_fuki01_hv.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-2:after,
+#guide-page .area-tateyama_kurobe .content-where__item-2:after {
+  background: url("../img/guide/kamikochi/icon_fuki02.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-2.is-active:after,
+#guide-page .area-tateyama_kurobe .content-where__item-2.is-active:after {
+  background: url("../img/guide/kamikochi/icon_fuki02_hv.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-3:after,
+#guide-page .area-tateyama_kurobe .content-where__item-3:after {
+  background: url("../img/guide/kamikochi/icon_fuki03.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-3.is-active:after,
+#guide-page .area-tateyama_kurobe .content-where__item-3.is-active:after {
+  background: url("../img/guide/kamikochi/icon_fuki03_hv.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-4:after,
+#guide-page .area-tateyama_kurobe .content-where__item-4:after {
+  background: url("../img/guide/kamikochi/icon_fuki04.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-4.is-active:after,
+#guide-page .area-tateyama_kurobe .content-where__item-4.is-active:after {
+  background: url("../img/guide/kamikochi/icon_fuki04_hv.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-5:after,
+#guide-page .area-tateyama_kurobe .content-where__item-5:after {
+  background: url("../img/guide/kamikochi/icon_fuki05.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-5.is-active:after,
+#guide-page .area-tateyama_kurobe .content-where__item-5.is-active:after {
+  background: url("../img/guide/kamikochi/icon_fuki05_hv.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-6:after,
+#guide-page .area-tateyama_kurobe .content-where__item-6:after {
+  background: url("../img/guide/kamikochi/icon_fuki06.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-6.is-active:after,
+#guide-page .area-tateyama_kurobe .content-where__item-6.is-active:after {
+  background: url("../img/guide/kamikochi/icon_fuki06_hv.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-7:after,
+#guide-page .area-tateyama_kurobe .content-where__item-7:after {
+  background: url("../img/guide/kamikochi/icon_fuki07.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-7.is-active:after,
+#guide-page .area-tateyama_kurobe .content-where__item-7.is-active:after {
+  background: url("../img/guide/kamikochi/icon_fuki07_hv.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-8:after,
+#guide-page .area-tateyama_kurobe .content-where__item-8:after {
+  background: url("../img/guide/kamikochi/icon_fuki08.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-8.is-active:after,
+#guide-page .area-tateyama_kurobe .content-where__item-8.is-active:after {
+  background: url("../img/guide/kamikochi/icon_fuki08_hv.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-9:after,
+#guide-page .area-tateyama_kurobe .content-where__item-9:after {
+  background: url("../img/guide/kamikochi/icon_fuki08.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__item-9.is-active:after,
+#guide-page .area-tateyama_kurobe .content-where__item-9.is-active:after {
+  background: url("../img/guide/kamikochi/icon_fuki09_hv.svg") no-repeat center;
+}
+
+#guide-page .area-kamikochi .content-where__detailSlide,
+#guide-page .area-tateyama_kurobe .content-where__detailSlide {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  opacity: 0 !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+#guide-page .area-kamikochi .content-where__detailSlide.swiper-slide-active,
+#guide-page .area-tateyama_kurobe .content-where__detailSlide.swiper-slide-active {
+  opacity: 1 !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#guide-page .area-kamikochi .content-where__detailPhoto,
+#guide-page .area-tateyama_kurobe .content-where__detailPhoto {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  vertical-align: top;
+}
+
+#guide-page .area-kamikochi .content-where__detailPhoto img,
+#guide-page .area-tateyama_kurobe .content-where__detailPhoto img {
+  width: auto;
+  height: 100%;
+}
+
+#guide-page .area-kamikochi .content-where__detailInfo,
+#guide-page .area-tateyama_kurobe .content-where__detailInfo {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 15px 30px;
+  border-top: 2px solid #213d7f;
+  border-right: 2px solid #213d7f;
+  border-bottom: 2px solid #213d7f;
+}
+
+#guide-page .area-kamikochi .content-where__detailInfo dt,
+#guide-page .area-tateyama_kurobe .content-where__detailInfo dt {
+  color: #283f87;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  line-height: 1;
+}
+
+#guide-page .area-kamikochi .content-where__detailInfo dd,
+#guide-page .area-tateyama_kurobe .content-where__detailInfo dd {
+  color: #253c7e;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+#guide-page .area-kamikochi .content-where__detailInfo .detailInfo__num,
+#guide-page .area-tateyama_kurobe .content-where__detailInfo .detailInfo__num {
+  margin-right: 8px;
+}
+
+#guide-page .area-kamikochi .detailInfo__link,
+#guide-page .area-tateyama_kurobe .detailInfo__link {
+  width: 100%;
+  line-height: 1;
+  margin: 0 0 0;
+  padding-right: 22px;
+  text-align: right;
+  position: relative;
+}
+
+#guide-page .area-kamikochi .detailInfo__link:after,
+#guide-page .area-tateyama_kurobe .detailInfo__link:after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  right: -2px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/guide/kamikochi/arrow_icon_b.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .detailInfo__link a,
+#guide-page .area-tateyama_kurobe .detailInfo__link a {
+  color: #2c4197;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  transition: opacity .3s;
+}
+
+#guide-page .area-kamikochi .detailInfo__link a:hover,
+#guide-page .area-tateyama_kurobe .detailInfo__link a:hover {
+  opacity: .7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+
+#guide-page .area-kamikochi .content-routes,
+#guide-page .area-tateyama_kurobe .content-routes {
+  width: 100%;
+}
+
+#guide-page .area-kamikochi .content-routes__inner,
+#guide-page .area-tateyama_kurobe .content-routes__inner {
+  width: 100%;
+  max-width: 970px;
+  padding: 70px 20px;
+  margin: 0 auto;
+}
+
+#guide-page .area-kamikochi .content-routes-flex,
+#guide-page .area-tateyama_kurobe .content-routes-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+#guide-page .area-kamikochi .content-routes__title,
+#guide-page .area-tateyama_kurobe .content-routes__title {
+  -ms-flex-order: 2;
+      order: 2;
+}
+
+#guide-page .area-kamikochi .content-routes__lead,
+#guide-page .area-tateyama_kurobe .content-routes__lead {
+  -ms-flex-order: 0;
+      order: 0;
+}
+
+#guide-page .area-kamikochi .content-routes__lead-top,
+#guide-page .area-tateyama_kurobe .content-routes__lead-top {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+#guide-page .area-kamikochi .content-routes__lead-btm,
+#guide-page .area-tateyama_kurobe .content-routes__lead-btm {
+  font-size: 14px;
+}
+
+#guide-page .area-kamikochi .content-routes__figure,
+#guide-page .area-tateyama_kurobe .content-routes__figure {
+  -ms-flex-order: 1;
+      order: 1;
+  margin: 60px auto;
+  position: relative;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor,
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor {
+  background: #293e83;
+  color: #fff;
+  font-size: 16px;
+  text-indent: .1em;
+  width: 31px;
+  height: 31px;
+  border-radius: 100px;
+  border: 2px solid #293e83;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  left: 337px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor:hover,
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor:hover {
+  background: #fff;
+  color: #293e83;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor:before,
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor:before {
+  content: attr(data-index);
+}
+
+#guide-page .area-kamikochi .content-routesInfo,
+#guide-page .area-tateyama_kurobe .content-routesInfo {
+  -ms-flex-order: 3;
+      order: 3;
+  width: 100%;
+  padding: 35px 0 0;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__item,
+#guide-page .area-tateyama_kurobe .content-routesInfo__item {
+  font-size: 18px;
+  white-space: nowrap;
+  width: 100%;
+  height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0 auto 10px;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__head,
+#guide-page .area-tateyama_kurobe .content-routesInfo__head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__head-connect .content-routesInfo__out,
+#guide-page .area-tateyama_kurobe .content-routesInfo__head-connect .content-routesInfo__out {
+  width: auto;
+  padding: 0 10px 0 15px;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__head-connect .content-routesInfo__connect,
+#guide-page .area-tateyama_kurobe .content-routesInfo__head-connect .content-routesInfo__connect {
+  padding: 0 10px;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__head-connect .content-routesInfo__connect:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__head-connect .content-routesInfo__connect:before {
+  content: "";
+  display: inline-block;
+  background: url("../img/common/arrow_icon_both_b.png") no-repeat 0 0;
+  background-size: contain;
+  width: 22px;
+  height: 22px;
+  margin-right: 20px;
+  vertical-align: text-bottom;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__head-connect .content-routesInfo__home:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__head-connect .content-routesInfo__home:before {
+  width: 22px;
+  height: 22px;
+  background: url("../img/common/arrow_icon_both_b.png") no-repeat 0 0;
+  margin-right: 20px;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__links,
+#guide-page .area-tateyama_kurobe .content-routesInfo__links {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 425px;
+  max-width: 45.6%;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__num,
+#guide-page .area-tateyama_kurobe .content-routesInfo__num {
+  background: #fff;
+  font-size: 16px;
+  text-indent: .1em;
+  width: 31px;
+  height: 31px;
+  border-radius: 100px;
+  border: 2px solid #293e83;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__out,
+#guide-page .area-tateyama_kurobe .content-routesInfo__out {
+  width: 150px;
+  padding: 0 20px 0 15px;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__home:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__home:before {
+  content: "";
+  display: inline-block;
+  background: url("../img/guide/kamikochi/routes_arrow_both.svg") no-repeat 0 0;
+  background-size: contain;
+  width: 117px;
+  height: 17px;
+  margin-right: 25px;
+  vertical-align: text-bottom;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__tichet,
+#guide-page .area-kamikochi .content-routesInfo__timetable,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__tichet a, #guide-page .area-kamikochi .content-routesInfo__tichet span,
+#guide-page .area-kamikochi .content-routesInfo__timetable a,
+#guide-page .area-kamikochi .content-routesInfo__timetable span,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet a,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet span,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable a,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable span {
+  color: #fff;
+  font-size: 14px;
+  line-height: 0;
+  letter-spacing: 0;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #2c4188;
+  background-color: #2c4188;
+  transition: .3s;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__tichet a:before, #guide-page .area-kamikochi .content-routesInfo__tichet a:after, #guide-page .area-kamikochi .content-routesInfo__tichet span:before, #guide-page .area-kamikochi .content-routesInfo__tichet span:after,
+#guide-page .area-kamikochi .content-routesInfo__timetable a:before,
+#guide-page .area-kamikochi .content-routesInfo__timetable a:after,
+#guide-page .area-kamikochi .content-routesInfo__timetable span:before,
+#guide-page .area-kamikochi .content-routesInfo__timetable span:after,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:after,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet span:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet span:after,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:after,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable span:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable span:after {
+  content: "";
+  display: inline-block;
+  transition: .3s;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__tichet a:hover, #guide-page .area-kamikochi .content-routesInfo__tichet span:hover,
+#guide-page .area-kamikochi .content-routesInfo__timetable a:hover,
+#guide-page .area-kamikochi .content-routesInfo__timetable span:hover,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:hover,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet span:hover,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:hover,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable span:hover {
+  color: #2c4188;
+  background-color: #fff;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__tichet span,
+#guide-page .area-kamikochi .content-routesInfo__timetable span,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet span,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable span {
+  pointer-events: none;
+  background-color: #999;
+  border: 1px solid #999;
+  opacity: .5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+#guide-page .area-kamikochi .content-routesInfo__tichet a:before, #guide-page .area-kamikochi .content-routesInfo__tichet span:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet span:before {
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+  background: url("../img/guide/kamikochi/icon_ticket.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__tichet a:after, #guide-page .area-kamikochi .content-routesInfo__tichet span:after,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:after,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet span:after {
+  width: 11.5px;
+  height: 11.5px;
+  margin-left: 10px;
+  background: url("../img/guide/kamikochi/icon_blank.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__tichet a:hover:before, #guide-page .area-kamikochi .content-routesInfo__tichet span:hover:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:hover:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet span:hover:before {
+  background: url("../img/guide/kamikochi/icon_ticket_hv.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__tichet a:hover:after, #guide-page .area-kamikochi .content-routesInfo__tichet span:hover:after,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:hover:after,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet span:hover:after {
+  background: url("../img/guide/kamikochi/icon_blank_hv.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__tichet + .content-routesInfo__timetable,
+#guide-page .area-tateyama_kurobe .content-routesInfo__tichet + .content-routesInfo__timetable {
+  margin-left: 15px;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__timetable a:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:before {
+  width: 22px;
+  height: 22px;
+  margin-right: 18px;
+  background: url("../img/guide/kamikochi/icon_clock.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__timetable a:after,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:after {
+  width: 6px;
+  height: 9px;
+  margin-left: 22px;
+  background: url("../img/guide/kamikochi/arrow_icon_w.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__timetable a:hover:before,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:hover:before {
+  background: url("../img/guide/kamikochi/icon_clock_hv.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__timetable a:hover:after,
+#guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:hover:after {
+  background: url("../img/guide/kamikochi/arrow_icon_b.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .content-routesInfo__note,
+#guide-page .area-tateyama_kurobe .content-routesInfo__note {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 15px 0 0;
+}
+
+#guide-page .area-kamikochi .content-hotels,
+#guide-page .area-tateyama_kurobe .content-hotels {
+  width: 100%;
+  margin: 50px auto 50px;
+  overflow: hidden;
+}
+
+#guide-page .area-kamikochi .content-hotels__inner,
+#guide-page .area-tateyama_kurobe .content-hotels__inner {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+#guide-page .area-kamikochi .content-hotels__wrapper,
+#guide-page .area-tateyama_kurobe .content-hotels__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+#guide-page .area-kamikochi .content-hotels__info,
+#guide-page .area-tateyama_kurobe .content-hotels__info {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+#guide-page .area-kamikochi .content-hotels__infoInner,
+#guide-page .area-tateyama_kurobe .content-hotels__infoInner {
+  width: 340px;
+}
+
+#guide-page .area-kamikochi .content-hotels__infoTitle,
+#guide-page .area-tateyama_kurobe .content-hotels__infoTitle {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 38px;
+  margin: 0 0 12px;
+}
+
+#guide-page .area-kamikochi .content-hotels__infoLead-1,
+#guide-page .area-tateyama_kurobe .content-hotels__infoLead-1 {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 26px;
+}
+
+#guide-page .area-kamikochi .content-hotels__infoLead-2,
+#guide-page .area-tateyama_kurobe .content-hotels__infoLead-2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 26px;
+}
+
+#guide-page .area-kamikochi .content-hotels__link,
+#guide-page .area-tateyama_kurobe .content-hotels__link {
+  line-height: 1;
+  display: table;
+  margin: 0 0 20px;
+  padding-right: 22px;
+  text-align: right;
+  position: relative;
+}
+
+#guide-page .area-kamikochi .content-hotels__link:after,
+#guide-page .area-tateyama_kurobe .content-hotels__link:after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  right: -2px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/guide/kamikochi/arrow_icon_b.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .content-hotels__link a,
+#guide-page .area-tateyama_kurobe .content-hotels__link a {
+  color: #2c4197;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  transition: opacity .3s;
+}
+
+#guide-page .area-kamikochi .content-hotels__link a:hover,
+#guide-page .area-tateyama_kurobe .content-hotels__link a:hover {
+  opacity: .7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+
+#guide-page .area-kamikochi .content-hotels__reservation,
+#guide-page .area-tateyama_kurobe .content-hotels__reservation {
+  display: table;
+  line-height: 1;
+  width: 175px;
+  border: 1px solid #2c4197;
+  background-color: #2c4197;
+  text-align: center;
+  transition: background .3s;
+}
+
+#guide-page .area-kamikochi .content-hotels__reservation a,
+#guide-page .area-tateyama_kurobe .content-hotels__reservation a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 4px 0 7px;
+}
+
+#guide-page .area-kamikochi .content-hotels__reservation span,
+#guide-page .area-tateyama_kurobe .content-hotels__reservation span {
+  color: #fff;
+  font-size: 12px;
+  vertical-align: middle;
+  letter-spacing: 0.025em;
+  transition: color .3s;
+}
+
+#guide-page .area-kamikochi .content-hotels__reservation:hover,
+#guide-page .area-tateyama_kurobe .content-hotels__reservation:hover {
+  background: #fff;
+}
+
+#guide-page .area-kamikochi .content-hotels__reservation:hover span,
+#guide-page .area-tateyama_kurobe .content-hotels__reservation:hover span {
+  color: #2c4197;
+}
+
+#guide-page .area-kamikochi .content-hotels__reservation-blank,
+#guide-page .area-tateyama_kurobe .content-hotels__reservation-blank {
+  position: relative;
+}
+
+#guide-page .area-kamikochi .content-hotels__reservation-blank a:after,
+#guide-page .area-tateyama_kurobe .content-hotels__reservation-blank a:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  width: 12px;
+  height: 12px;
+  background: url("../img/guide/kamikochi/icon_blank.svg") no-repeat 0 0;
+  background-size: contain;
+  transition: background .3s;
+  pointer-events: none;
+}
+
+#guide-page .area-kamikochi .content-hotels__reservation-blank:hover:before,
+#guide-page .area-tateyama_kurobe .content-hotels__reservation-blank:hover:before {
+  background: url("../img/guide/kamikochi/icon_blank_hv.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .content-hotels__figure,
+#guide-page .area-tateyama_kurobe .content-hotels__figure {
+  width: 50%;
+  position: relative;
+}
+
+#guide-page .area-kamikochi .content-hotels__figureSlide,
+#guide-page .area-tateyama_kurobe .content-hotels__figureSlide {
+  line-height: 0;
+}
+
+#guide-page .area-kamikochi .content-hotels__figureSlide img,
+#guide-page .area-tateyama_kurobe .content-hotels__figureSlide img {
+  width: 100%;
+  height: auto;
+}
+
+#guide-page .area-kamikochi .content-hotels__pagination,
+#guide-page .area-tateyama_kurobe .content-hotels__pagination {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#guide-page .area-kamikochi .content-hotels__pagination .swiper-pagination-bullet,
+#guide-page .area-tateyama_kurobe .content-hotels__pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  border: 1.5px solid #fff;
+  background-color: transparent;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#guide-page .area-kamikochi .content-hotels__pagination .swiper-pagination-bullet-active,
+#guide-page .area-tateyama_kurobe .content-hotels__pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider,
+#guide-page .area-tateyama_kurobe .c-thumbSlider {
+  margin-bottom: 68px;
+  background-color: #f2f6f8;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__inner,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__inner {
+  position: relative;
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 69px 20px;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__head,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__head {
+  margin-bottom: 38px;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__head span,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__head span {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__list,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__list {
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 21.935483%;
+  height: 290px;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node + .c-thumbSlider__node,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node + .c-thumbSlider__node {
+  margin-left: 3.978494%;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node a,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node a:hover .c-thumbSlider__node__link span,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node a:hover .c-thumbSlider__node__link span {
+  text-decoration: underline;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node__img,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node__img {
+  width: 100%;
+  height: 185px;
+  margin-bottom: 13px;
+  overflow: hidden;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node__img img,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node__img img {
+  width: 100%;
+  height: auto;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node__img.is-wide img,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node__img.is-wide img {
+  width: auto;
+  height: 100%;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node__img.is-long img,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node__img.is-long img {
+  width: 100%;
+  height: auto;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node__head span,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node__head span {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.166666;
+  letter-spacing: -0.025em;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node__link,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node__link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-right: 22px;
+  padding-bottom: 3px;
+  text-align: right;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node__link:before,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node__link:before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  right: -2px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/guide/kamikochi/arrow_icon_b.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__node__link span,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__node__link span {
+  color: #2c4197;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__container.is-current ~ .c-thumbSlider__arrow,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__container.is-current ~ .c-thumbSlider__arrow {
+  display: block;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__container.is-current ~ .c-thumbSlider__pagination,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__container.is-current ~ .c-thumbSlider__pagination {
+  display: block;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide {
+  width: 21.935483%;
+  height: 290px;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide a,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide a:hover .c-thumbSlider__node__link span,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide a:hover .c-thumbSlider__node__link span {
+  text-decoration: underline;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide__img,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide__img {
+  display: inline-block;
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide__img img,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide__img img {
+  width: 100%;
+  height: auto;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide__img.is-wide img,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide__img.is-wide img {
+  width: auto;
+  height: 100%;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide__img.is-long img,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide__img.is-long img {
+  width: 100%;
+  height: auto;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide__head,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide__head {
+  margin: 10px auto 0;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide__head span,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide__head span {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.166666;
+  letter-spacing: -0.025em;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide__link,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide__link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-right: 22px;
+  padding-bottom: 3px;
+  text-align: right;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide__link:before,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide__link:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 12px;
+  background: url("../img/common/arrow_icon_b.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__slide__link span,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__slide__link span {
+  color: #2c4197;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__arrow,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__arrow {
+  position: absolute;
+  top: 214px;
+  z-index: 10;
+  width: 28px;
+  height: 44px;
+  background: url("../img/common/arrow_slide_b.png") no-repeat center center;
+  background-size: contain;
+  transition: opacity .3s;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__arrow:hover,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__arrow:hover {
+  opacity: .5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__arrow-prev,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__arrow-prev {
+  left: -50px;
+  transform: rotate(180deg);
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__arrow-next,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__arrow-next {
+  right: -50px;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__pagination,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__pagination {
+  position: static;
+  bottom: auto;
+  left: auto;
+  margin-top: 34px;
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__pagination .swiper-pagination-bullet,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  border: 2px solid #2c4197;
+  background-color: transparent;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#guide-page .area-kamikochi .c-thumbSlider__pagination .swiper-pagination-bullet-active,
+#guide-page .area-tateyama_kurobe .c-thumbSlider__pagination .swiper-pagination-bullet-active {
+  background-color: #2c4197;
+}
+
+/* ==============================================
+  only Kamikochi - Tourism Guide
+  @mixin ============================================= */
+#guide-page .area-kamikochi .content-where__item-1 {
+  left: 85px;
+  top: 350px;
+}
+
+#guide-page .area-kamikochi .content-where__item-2 {
+  left: 152px;
+  top: 362px;
+}
+
+#guide-page .area-kamikochi .content-where__item-3 {
+  left: 272px;
+  top: 272px;
+}
+
+#guide-page .area-kamikochi .content-where__item-4 {
+  left: 525px;
+  top: 240px;
+}
+
+#guide-page .area-kamikochi .content-where__item-5 {
+  left: 172px;
+  top: 258px;
+}
+
+#guide-page .area-kamikochi .content-where__item-6 {
+  left: 335px;
+  top: 260px;
+}
+
+#guide-page .area-kamikochi .content-where__item-7 {
+  left: 307px;
+  top: 267px;
+}
+
+#guide-page .area-kamikochi .content-where__item-8 {
+  left: 680px;
+  top: 30px;
+}
+
+#guide-page .area-kamikochi .content-where__item-9 {
+  left: 980px;
+  top: 30px;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor--1 {
+  top: 3px;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor--2 {
+  top: 69px;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor--3 {
+  top: 133px;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor--4 {
+  top: 178px;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor--5 {
+  top: 222px;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor--6 {
+  top: 351px;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor--7 {
+  top: 412px;
+}
+
+#guide-page .area-kamikochi .content-routes__figure-anchor--8 {
+  left: 579px;
+  top: 279px;
+}
+
+/* ==============================================
+  only tateyama kurobe - Tourism Guide
+  @mixin ============================================= */
+#guide-page .area-tateyama_kurobe .content-where__map__img {
+  margin-bottom: 35px;
+}
+
+#guide-page .area-tateyama_kurobe .content-where__map__download {
+  display: none;
+}
+
+#guide-page .area-tateyama_kurobe .content-where__item-1 {
+  left: 392px;
+  top: 32px;
+}
+
+#guide-page .area-tateyama_kurobe .content-where__item-2 {
+  left: 590px;
+  top: 102px;
+}
+
+#guide-page .area-tateyama_kurobe .content-where__item-3 {
+  left: 362px;
+  top: 32px;
+}
+
+#guide-page .area-tateyama_kurobe .content-where__item-4 {
+  left: 256px;
+  top: 62px;
+}
+
+#guide-page .area-tateyama_kurobe .content-where__item-5 {
+  left: 445px;
+  top: 45px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor {
+  left: 170px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor--1 {
+  top: 3px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor--2 {
+  top: 40px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor--3 {
+  top: 76px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor--4 {
+  top: 150px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor--5 {
+  top: 192px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor--6 {
+  top: 278px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor--7 {
+  left: 646px;
+  top: 42px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor--8 {
+  left: 530px;
+  top: 90px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor--9 {
+  left: 530px;
+  top: 192px;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes__figure-anchor--10 {
+  left: 530px;
+  top: 278px;
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended__lead {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 42px;
+  margin: 0 0 60px;
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended__inner {
+  max-width: 970px;
+  padding: 80px 20px 90px;
+  margin: 0 auto;
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended__flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended__box {
+  background: #fff;
+  width: 290px;
+  border: 6px solid #2b3e83;
+  position: relative;
+  padding: 50px 20px 36px;
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended__figure {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended__figure img {
+  margin: 0 auto;
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended__tag {
+  background: url("../img/guide/tateyama_kurobe/recommend_tag.svg") no-repeat 0 0;
+  background-size: contain;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: 136px;
+  height: 39px;
+  padding: 6px 0 0;
+  position: absolute;
+  left: -30px;
+  top: -20px;
+  transform: rotate(-10deg);
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended__title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  margin: 0 0 16px;
+}
+
+#guide-page .area-tateyama_kurobe .line-wrapper {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+#guide-page .area-tateyama_kurobe .line-wrapper:after {
+  content: "";
+  background: #f2f6f8;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  height: 7px;
+  z-index: 0;
+}
+
+#guide-page .area-tateyama_kurobe .line-inner {
+  position: relative;
+  z-index: 1;
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended__text {
+  color: #293e83;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended__text span {
+  font-size: 12px;
+}
+
+#guide-page .area-tateyama_kurobe .content-recommended,
+#guide-page .area-tateyama_kurobe .c-thumbSlider {
+  background-color: #fff !important;
+}
+
+#guide-page .area-tateyama_kurobe .content-routes {
+  background-color: #f2f6f8 !important;
+}
+
+@media screen and (max-width: 750px) {
+  /* ==============================================
+  Kamikochi - Tourism Guide
+  @mixin ============================================= */
+  #guide-page .area-kamikochi .block,
+  #guide-page .area-tateyama_kurobe .block {
+    margin-bottom: 0;
+    padding: 9.33vw 4.67vw;
+  }
+  #guide-page .area-kamikochi .content__head,
+  #guide-page .area-tateyama_kurobe .content__head {
+    max-width: 100%;
+    margin: 0 auto 6.67vw;
+    padding: 0;
+  }
+  #guide-page .area-kamikochi .content__title span,
+  #guide-page .area-tateyama_kurobe .content__title span {
+    font-size: 5.33vw;
+    line-height: 1;
+  }
+  #guide-page .area-kamikochi .mainVisual,
+  #guide-page .area-tateyama_kurobe .mainVisual {
+    height: 73.87vw;
+  }
+  #guide-page .area-kamikochi .mainVisual__titleWrapper,
+  #guide-page .area-tateyama_kurobe .mainVisual__titleWrapper {
+    top: 30.67vw;
+  }
+  #guide-page .area-kamikochi .mainVisual__title,
+  #guide-page .area-tateyama_kurobe .mainVisual__title {
+    white-space: nowrap;
+  }
+  #guide-page .area-kamikochi .mainVisual__title span,
+  #guide-page .area-tateyama_kurobe .mainVisual__title span {
+    font-size: 8vw;
+  }
+  #guide-page .area-kamikochi .mainVisual__subtitle,
+  #guide-page .area-tateyama_kurobe .mainVisual__subtitle {
+    margin: 0 auto 0.8vw;
+  }
+  #guide-page .area-kamikochi .mainVisual__subtitle span,
+  #guide-page .area-tateyama_kurobe .mainVisual__subtitle span {
+    font-size: 3.2vw;
+  }
+  #guide-page .area-kamikochi .mainVisual__map,
+  #guide-page .area-tateyama_kurobe .mainVisual__map {
+    max-width: 100%;
+    padding: 0;
+  }
+  #guide-page .area-kamikochi .mainVisual__map__item,
+  #guide-page .area-tateyama_kurobe .mainVisual__map__item {
+    width: 23.73vw;
+    height: 26.93vw;
+    right: 5.33vw;
+    bottom: 4vw;
+  }
+  #guide-page .area-kamikochi .block__head,
+  #guide-page .area-tateyama_kurobe .block__head {
+    margin-bottom: 0;
+  }
+  #guide-page .area-kamikochi .block__head__title,
+  #guide-page .area-tateyama_kurobe .block__head__title {
+    margin-bottom: 2.67vw;
+  }
+  #guide-page .area-kamikochi .block__head__title span,
+  #guide-page .area-tateyama_kurobe .block__head__title span {
+    font-weight: bold;
+  }
+  #guide-page .area-kamikochi .block__head__title-under,
+  #guide-page .area-tateyama_kurobe .block__head__title-under {
+    font-size: 4.4vw;
+    line-height: 5.33vw;
+    margin: 0 0 5.33vw;
+  }
+  #guide-page .area-kamikochi .block__head__content,
+  #guide-page .area-tateyama_kurobe .block__head__content {
+    font-size: 3.2vw;
+    line-height: 4.53vw;
+  }
+  #guide-page .area-kamikochi .block__content,
+  #guide-page .area-tateyama_kurobe .block__content {
+    display: none;
+  }
+  #guide-page .area-kamikochi .content-area__inner,
+  #guide-page .area-tateyama_kurobe .content-area__inner {
+    max-width: 100%;
+    padding: 9.33vw 0;
+    overflow: hidden;
+  }
+  #guide-page .area-kamikochi .content-area__title,
+  #guide-page .area-tateyama_kurobe .content-area__title {
+    padding: 0 4.67vw;
+  }
+  #guide-page .area-kamikochi .content-area__map img,
+  #guide-page .area-tateyama_kurobe .content-area__map img {
+    width: 115%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #guide-page .area-kamikochi .content-where,
+  #guide-page .area-tateyama_kurobe .content-where {
+    max-width: 100%;
+  }
+  #guide-page .area-kamikochi .content-where__inner,
+  #guide-page .area-tateyama_kurobe .content-where__inner {
+    max-width: 100%;
+    padding: 10.67vw 0 0;
+    margin: 0 auto;
+  }
+  #guide-page .area-kamikochi .content-where__title,
+  #guide-page .area-tateyama_kurobe .content-where__title {
+    padding: 0 4.67vw;
+  }
+  #guide-page .area-kamikochi .content-where__map,
+  #guide-page .area-tateyama_kurobe .content-where__map {
+    margin: -6.67vw 0 0;
+  }
+  #guide-page .area-kamikochi .content-where__map__img,
+  #guide-page .area-tateyama_kurobe .content-where__map__img {
+    width: 100%;
+    margin-left: auto;
+  }
+  #guide-page .area-kamikochi .content-where__map__img img,
+  #guide-page .area-tateyama_kurobe .content-where__map__img img {
+    width: 100%;
+    height: auto;
+  }
+  #guide-page .area-kamikochi .content-where__map__download,
+  #guide-page .area-tateyama_kurobe .content-where__map__download {
+    right: 4.67vw;
+    bottom: 4vw;
+    width: 6.4vw;
+    height: 6.4vw;
+    transition: none;
+  }
+  #guide-page .area-kamikochi .content-where__map__download:after,
+  #guide-page .area-tateyama_kurobe .content-where__map__download:after {
+    transform: none;
+    transition: none;
+  }
+  #guide-page .area-kamikochi .content-where__map__download:hover:after,
+  #guide-page .area-tateyama_kurobe .content-where__map__download:hover:after {
+    background: url("../img/guide/kamikochi/where_btn_dl.svg") no-repeat 0 0;
+    background-size: contain;
+    transform: none;
+  }
+  #guide-page .area-kamikochi .content-where__map__download-text,
+  #guide-page .area-tateyama_kurobe .content-where__map__download-text {
+    display: none;
+  }
+  #guide-page .area-kamikochi .content-where__item,
+  #guide-page .area-tateyama_kurobe .content-where__item {
+    width: 3.2vw;
+    height: 4vw;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  #guide-page .area-kamikochi .content-where__item.is-active,
+  #guide-page .area-tateyama_kurobe .content-where__item.is-active {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page .area-kamikochi .content-where__item.is-active:before, #guide-page .area-kamikochi .content-where__item.is-active:after,
+  #guide-page .area-tateyama_kurobe .content-where__item.is-active:before,
+  #guide-page .area-tateyama_kurobe .content-where__item.is-active:after {
+    width: 10.27vw;
+    height: 13.07vw;
+  }
+  #guide-page .area-kamikochi .content-where__item:before, #guide-page .area-kamikochi .content-where__item:after,
+  #guide-page .area-tateyama_kurobe .content-where__item:before,
+  #guide-page .area-tateyama_kurobe .content-where__item:after {
+    width: 6.27vw;
+    height: 8vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-1,
+  #guide-page .area-tateyama_kurobe .content-where__item-1 {
+    left: 10.197vw;
+    top: 46.67vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-2,
+  #guide-page .area-tateyama_kurobe .content-where__item-2 {
+    left: 18.243vw;
+    top: 48.27vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-3,
+  #guide-page .area-tateyama_kurobe .content-where__item-3 {
+    left: 32.643vw;
+    top: 36.27vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-4,
+  #guide-page .area-tateyama_kurobe .content-where__item-4 {
+    left: 63vw;
+    top: 32vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-5,
+  #guide-page .area-tateyama_kurobe .content-where__item-5 {
+    left: 20.637vw;
+    top: 34.4vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-6,
+  #guide-page .area-tateyama_kurobe .content-where__item-6 {
+    left: 46.197vw;
+    top: 25.33vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-7,
+  #guide-page .area-tateyama_kurobe .content-where__item-7 {
+    left: 36.837vw;
+    top: 35.6vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-8,
+  #guide-page .area-tateyama_kurobe .content-where__item-8 {
+    left: 81.603vw;
+    top: 4vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-9,
+  #guide-page .area-tateyama_kurobe .content-where__item-9 {
+    left: 117.603vw;
+    top: 4vw;
+  }
+  #guide-page .area-kamikochi .content-where__detail-arrow,
+  #guide-page .area-tateyama_kurobe .content-where__detail-arrow {
+    display: block;
+    position: absolute;
+    top: 21.33vw;
+    z-index: 10;
+    width: 8.8vw;
+    height: 8.8vw;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    background: none;
+    background-size: contain;
+  }
+  #guide-page .area-kamikochi .content-where__detail-arrow:before,
+  #guide-page .area-tateyama_kurobe .content-where__detail-arrow:before {
+    content: "";
+    width: 3.2vw;
+    height: 5.33vw;
+    position: relative;
+    left: 0.53vw;
+    background: url("../img/common/arrow_icon_w_2.svg") no-repeat center center;
+    background-size: contain;
+    z-index: 10;
+    display: inline-block;
+  }
+  #guide-page .area-kamikochi .content-where__detail-arrow:after,
+  #guide-page .area-tateyama_kurobe .content-where__detail-arrow:after {
+    background-color: #0a0c3d;
+    opacity: .3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    content: "";
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8.8vw;
+    height: 8.8vw;
+  }
+  #guide-page .area-kamikochi .content-where__detail-arrow-prev,
+  #guide-page .area-tateyama_kurobe .content-where__detail-arrow-prev {
+    left: 5.33vw;
+    transform: rotate(180deg);
+  }
+  #guide-page .area-kamikochi .content-where__detail-arrow-next,
+  #guide-page .area-tateyama_kurobe .content-where__detail-arrow-next {
+    right: 5.33vw;
+  }
+  #guide-page .area-kamikochi .content-where__detailSlide,
+  #guide-page .area-tateyama_kurobe .content-where__detailSlide {
+    display: block;
+    opacity: 1 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page .area-kamikochi .content-where__detailSlide.swiper-slide-active,
+  #guide-page .area-tateyama_kurobe .content-where__detailSlide.swiper-slide-active {
+    opacity: 1 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page .area-kamikochi .content-where__detailPhoto,
+  #guide-page .area-tateyama_kurobe .content-where__detailPhoto {
+    width: 100%;
+    height: 49.6vw;
+    overflow: hidden;
+    display: block;
+  }
+  #guide-page .area-kamikochi .content-where__detailPhoto img,
+  #guide-page .area-tateyama_kurobe .content-where__detailPhoto img {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 100%;
+    height: auto;
+  }
+  #guide-page .area-kamikochi .content-where__detailInfo,
+  #guide-page .area-tateyama_kurobe .content-where__detailInfo {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 6.67vw 4.67vw 8vw;
+    border: 0 none;
+  }
+  #guide-page .area-kamikochi .content-where__detailInfo dt,
+  #guide-page .area-tateyama_kurobe .content-where__detailInfo dt {
+    text-align: center;
+    font-size: 4vw;
+    margin: 0 0 2.67vw;
+  }
+  #guide-page .area-kamikochi .content-where__detailInfo dd,
+  #guide-page .area-tateyama_kurobe .content-where__detailInfo dd {
+    font-size: 3.2vw;
+    line-height: 4.27vw;
+  }
+  #guide-page .area-kamikochi .content-where__detailInfo .detailInfo__num,
+  #guide-page .area-tateyama_kurobe .content-where__detailInfo .detailInfo__num {
+    margin-right: 1.07vw;
+  }
+  #guide-page .area-kamikochi .content-where__detailInfo .detailInfo__num img,
+  #guide-page .area-tateyama_kurobe .content-where__detailInfo .detailInfo__num img {
+    width: 4vw;
+    height: 4vw;
+  }
+  #guide-page .area-kamikochi .detailInfo__link,
+  #guide-page .area-tateyama_kurobe .detailInfo__link {
+    margin: 4.67vw 2vw 0 0;
+    padding-right: 3.07vw;
+  }
+  #guide-page .area-kamikochi .detailInfo__link:after,
+  #guide-page .area-tateyama_kurobe .detailInfo__link:after {
+    top: 0.4vw;
+    width: 1.6vw;
+    height: 2.4vw;
+  }
+  #guide-page .area-kamikochi .detailInfo__link a,
+  #guide-page .area-tateyama_kurobe .detailInfo__link a {
+    font-size: 3.2vw;
+    transition: none;
+  }
+  #guide-page .area-kamikochi .detailInfo__link a:hover,
+  #guide-page .area-tateyama_kurobe .detailInfo__link a:hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page .area-kamikochi .content-routes,
+  #guide-page .area-tateyama_kurobe .content-routes {
+    width: 100%;
+  }
+  #guide-page .area-kamikochi .content-routes__inner,
+  #guide-page .area-tateyama_kurobe .content-routes__inner {
+    max-width: 100%;
+    padding: 9.33vw 4.67vw 6.67vw;
+  }
+  #guide-page .area-kamikochi .content-routes__title,
+  #guide-page .area-tateyama_kurobe .content-routes__title {
+    -ms-flex-order: 1;
+        order: 1;
+    font-size: 5.33vw;
+    margin: 0 0 4vw;
+  }
+  #guide-page .area-kamikochi .content-routes__lead,
+  #guide-page .area-tateyama_kurobe .content-routes__lead {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  #guide-page .area-kamikochi .content-routes__lead-top,
+  #guide-page .area-tateyama_kurobe .content-routes__lead-top {
+    font-size: 3.2vw;
+    line-height: 4.4vw;
+    margin: 0 0 4vw;
+  }
+  #guide-page .area-kamikochi .content-routes__lead-btm,
+  #guide-page .area-tateyama_kurobe .content-routes__lead-btm {
+    font-size: 3.2vw;
+    line-height: 4.4vw;
+  }
+  #guide-page .area-kamikochi .content-routes__figure,
+  #guide-page .area-tateyama_kurobe .content-routes__figure {
+    -ms-flex-order: 0;
+        order: 0;
+    margin: 0 auto 8vw;
+    width: 100%;
+  }
+  #guide-page .area-kamikochi .content-routes__figure img,
+  #guide-page .area-tateyama_kurobe .content-routes__figure img {
+    width: 100%;
+    height: auto;
+  }
+  #guide-page .area-kamikochi .content-routes__figure-anchor,
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor {
+    font-size: 2vw;
+    font-weight: bold;
+    width: 2.93vw;
+    height: 2.93vw;
+    left: 33.33vw;
+    transform: scale(0.8);
+  }
+  #guide-page .area-kamikochi .content-routes__figure-anchor:hover,
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor:hover {
+    background: #293e83;
+    color: #fff;
+  }
+  #guide-page .area-kamikochi .content-routesInfo,
+  #guide-page .area-tateyama_kurobe .content-routesInfo {
+    -ms-flex-order: 3;
+        order: 3;
+    padding: 6.67vw 0 0;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__item,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__item {
+    font-size: 3.47vw;
+    display: block;
+    height: auto;
+    margin: 0 auto 6.67vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__head,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__head {
+    margin: 0 0 1.33vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__head-connect .content-routesInfo__out,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__head-connect .content-routesInfo__out {
+    text-align: center;
+    width: 24vw;
+    padding: 0 1.33vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__head-connect .content-routesInfo__connect,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__head-connect .content-routesInfo__connect {
+    width: 30.67vw;
+    padding: 0 1.33vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__head-connect .content-routesInfo__connect:before,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__head-connect .content-routesInfo__connect:before {
+    content: "";
+    display: inline-block;
+    background: url("../img/common/arrow_icon_both_b.png") no-repeat 0 0;
+    background-size: contain;
+    width: 4.4vw;
+    height: 4.4vw;
+    margin-right: 2.67vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__head-connect .content-routesInfo__home,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__head-connect .content-routesInfo__home {
+    width: 30.67vw;
+    padding: 0 1.33vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__head-connect .content-routesInfo__home:before,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__head-connect .content-routesInfo__home:before {
+    width: 4.4vw;
+    height: 4.4vw;
+    background: url("../img/common/arrow_icon_both_b.png") no-repeat 0 0;
+    background-size: contain;
+    margin-right: 4vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__links,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__links {
+    width: 100%;
+    max-width: 100%;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__num,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__num {
+    font-size: 2.93vw;
+    border: 1.5px solid #293e83;
+    width: 5.87vw;
+    height: 5.87vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__out,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__out {
+    width: 32.67vw;
+    padding: 0 0 0 5.33vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__home:before,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__home:before {
+    content: "";
+    display: inline-block;
+    background: url("../img/guide/kamikochi/routes_arrow_both_sp.svg") no-repeat 0 0;
+    background-size: contain;
+    width: 14.67vw;
+    height: 3.07vw;
+    margin-right: 9.33vw;
+    vertical-align: text-bottom;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__tichet,
+  #guide-page .area-kamikochi .content-routesInfo__timetable,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__tichet,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__timetable {
+    width: 100%;
+    height: 10.67vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__tichet a,
+  #guide-page .area-kamikochi .content-routesInfo__timetable a,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__tichet a,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__timetable a {
+    font-size: 3.2vw;
+    transition: none;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__tichet a:before, #guide-page .area-kamikochi .content-routesInfo__tichet a:after,
+  #guide-page .area-kamikochi .content-routesInfo__timetable a:before,
+  #guide-page .area-kamikochi .content-routesInfo__timetable a:after,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:before,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:after,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:before,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:after {
+    transition: none;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__tichet a:hover,
+  #guide-page .area-kamikochi .content-routesInfo__timetable a:hover,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:hover,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:hover {
+    color: #fff;
+    background-color: #2c4188;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__tichet a:before,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:before {
+    width: 5.33vw;
+    height: 5.33vw;
+    margin-right: 2vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__tichet a:after,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:after {
+    width: 2.13vw;
+    height: 2.13vw;
+    margin-left: 2.67vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__tichet a:hover:before,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:hover:before {
+    background: url("../img/guide/kamikochi/icon_ticket.svg") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__tichet a:hover:after,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__tichet a:hover:after {
+    background: url("../img/guide/kamikochi/icon_blank.svg") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__tichet + .content-routesInfo__timetable,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__tichet + .content-routesInfo__timetable {
+    margin-left: 3.33vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__timetable a:before,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:before {
+    width: 4.53vw;
+    height: 4.53vw;
+    margin-right: 3.33vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__timetable a:after,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:after {
+    width: 0.93vw;
+    height: 1.6vw;
+    margin-left: 4.67vw;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__timetable a:hover:before,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:hover:before {
+    background: url("../img/guide/kamikochi/icon_clock.svg") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__timetable a:hover:after,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__timetable a:hover:after {
+    background: url("../img/guide/kamikochi/arrow_icon.svg") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .area-kamikochi .content-routesInfo__note,
+  #guide-page .area-tateyama_kurobe .content-routesInfo__note {
+    font-size: 3.2vw;
+    line-height: 4.4vw;
+    margin: 5.33vw 0 0;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider__inner,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider__inner {
+    max-width: 100%;
+    padding: 6.67vw 0 8vw;
+    margin: 0 auto;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider__title,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider__title {
+    width: calc(100% - 9.33vw);
+    margin: 0 auto;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list {
+    width: 100%;
+    padding: 0;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__prev,
+  #guide-page .area-kamikochi .c-tickets-slider-list__next,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__prev,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__next {
+    display: block;
+    position: absolute;
+    top: 21.33vw;
+    z-index: 10;
+    width: 8.8vw;
+    height: 8.8vw;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    background: none;
+    background-size: contain;
+    transition: none;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__prev:hover,
+  #guide-page .area-kamikochi .c-tickets-slider-list__next:hover,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__prev:hover,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__next:hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__prev:before,
+  #guide-page .area-kamikochi .c-tickets-slider-list__next:before,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__prev:before,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__next:before {
+    content: "";
+    width: 3.2vw;
+    height: 5.33vw;
+    position: relative;
+    left: 0.53vw;
+    background: url("../img/common/arrow_icon_w_2.svg") no-repeat center center;
+    background-size: contain;
+    z-index: 10;
+    display: inline-block;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__prev:after,
+  #guide-page .area-kamikochi .c-tickets-slider-list__next:after,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__prev:after,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__next:after {
+    background-color: #0a0c3d;
+    opacity: .3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    content: "";
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8.8vw;
+    height: 8.8vw;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__prev,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__prev {
+    left: 5.33vw;
+    transform: rotate(180deg);
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__next,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__next {
+    right: 5.33vw;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__lists,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__lists {
+    display: block;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item {
+    width: 100%;
+    transition: none;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item a,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item a {
+    display: block;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item:hover,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item:hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item:hover .c-tickets-slider-list__item__link span,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item:hover .c-tickets-slider-list__item__link span {
+    text-decoration: none;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item__img,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item__img {
+    position: relative;
+    width: 100%;
+    height: 49.33vw;
+    overflow: hidden;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item__img img,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item__title,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item__title {
+    margin-top: 6.67vw;
+    padding-left: 4.67vw;
+    padding-right: 4.67vw;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item__title span,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item__title span {
+    font-size: 4.4vw;
+    font-weight: bold;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item__content,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item__content {
+    margin-top: 3.2vw;
+    padding-left: 4.67vw;
+    padding-right: 4.67vw;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item__content span,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item__content span {
+    font-size: 3.2vw;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item__link,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item__link {
+    width: calc(100% - 9.33vw);
+    margin: 1.33vw auto 0;
+    padding-right: 3.07vw;
+    font-size: 3.2vw;
+    transition: none;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item__link:after,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item__link:after {
+    top: 1.2vw;
+    width: 1.6vw;
+    height: 2.4vw;
+  }
+  #guide-page .area-kamikochi .c-tickets-slider-list__item__link span,
+  #guide-page .area-tateyama_kurobe .c-tickets-slider-list__item__link span {
+    font-size: 3.2vw;
+  }
+  #guide-page .area-kamikochi .content-hotels,
+  #guide-page .area-tateyama_kurobe .content-hotels {
+    margin: 0 auto;
+  }
+  #guide-page .area-kamikochi .content-hotels__inner,
+  #guide-page .area-tateyama_kurobe .content-hotels__inner {
+    width: 100%;
+    padding: 9.33vw 0;
+  }
+  #guide-page .area-kamikochi .content-hotels__wrapper,
+  #guide-page .area-tateyama_kurobe .content-hotels__wrapper {
+    display: block;
+  }
+  #guide-page .area-kamikochi .content-hotels__info,
+  #guide-page .area-tateyama_kurobe .content-hotels__info {
+    width: 100%;
+    display: block;
+  }
+  #guide-page .area-kamikochi .content-hotels__infoInner,
+  #guide-page .area-tateyama_kurobe .content-hotels__infoInner {
+    width: 100%;
+  }
+  #guide-page .area-kamikochi .content-hotels__infoTitle,
+  #guide-page .area-tateyama_kurobe .content-hotels__infoTitle {
+    font-size: 5.33vw;
+    line-height: 1;
+    margin: 0 0 3.47vw;
+    padding: 0 4.67vw;
+  }
+  #guide-page .area-kamikochi .content-hotels__infoTitle br,
+  #guide-page .area-tateyama_kurobe .content-hotels__infoTitle br {
+    display: none;
+  }
+  #guide-page .area-kamikochi .content-hotels__infoLead-1,
+  #guide-page .area-tateyama_kurobe .content-hotels__infoLead-1 {
+    font-size: 4.4vw;
+    line-height: 5.33vw;
+    margin: 0 0 4vw;
+    padding: 0 4.67vw;
+  }
+  #guide-page .area-kamikochi .content-hotels__infoLead-2,
+  #guide-page .area-tateyama_kurobe .content-hotels__infoLead-2 {
+    font-size: 3.2vw;
+    line-height: 4.53vw;
+    margin: 5.33vw 0 4vw;
+    padding: 0 4.67vw;
+  }
+  #guide-page .area-kamikochi .content-hotels__link,
+  #guide-page .area-tateyama_kurobe .content-hotels__link {
+    display: block;
+    margin: 0 4.67vw 4vw 0;
+    padding-right: 3.07vw;
+  }
+  #guide-page .area-kamikochi .content-hotels__link:after,
+  #guide-page .area-tateyama_kurobe .content-hotels__link:after {
+    top: 0.4vw;
+    width: 1.6vw;
+    height: 2.4vw;
+  }
+  #guide-page .area-kamikochi .content-hotels__link a,
+  #guide-page .area-tateyama_kurobe .content-hotels__link a {
+    font-size: 3.2vw;
+    transition: none;
+  }
+  #guide-page .area-kamikochi .content-hotels__link a:hover,
+  #guide-page .area-tateyama_kurobe .content-hotels__link a:hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page .area-kamikochi .content-hotels__reservation,
+  #guide-page .area-tateyama_kurobe .content-hotels__reservation {
+    display: block;
+    width: auto;
+    height: 10.67vw;
+    margin: 6.67vw 4.67vw 0;
+  }
+  #guide-page .area-kamikochi .content-hotels__reservation a,
+  #guide-page .area-tateyama_kurobe .content-hotels__reservation a {
+    padding: 3.2vw 0 0;
+  }
+  #guide-page .area-kamikochi .content-hotels__reservation span,
+  #guide-page .area-tateyama_kurobe .content-hotels__reservation span {
+    font-size: 3.73vw;
+    transition: none;
+  }
+  #guide-page .area-kamikochi .content-hotels__reservation:hover,
+  #guide-page .area-tateyama_kurobe .content-hotels__reservation:hover {
+    background: #2c4197;
+  }
+  #guide-page .area-kamikochi .content-hotels__reservation:hover span,
+  #guide-page .area-tateyama_kurobe .content-hotels__reservation:hover span {
+    color: #fff;
+  }
+  #guide-page .area-kamikochi .content-hotels__reservation-blank,
+  #guide-page .area-tateyama_kurobe .content-hotels__reservation-blank {
+    position: relative;
+    text-indent: 5.33vw;
+  }
+  #guide-page .area-kamikochi .content-hotels__reservation-blank a:after,
+  #guide-page .area-tateyama_kurobe .content-hotels__reservation-blank a:after {
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    margin-left: 5.33vw;
+    width: 3.2vw;
+    height: 3.2vw;
+    transition: none;
+  }
+  #guide-page .area-kamikochi .content-hotels__reservation-blank:hover:before,
+  #guide-page .area-tateyama_kurobe .content-hotels__reservation-blank:hover:before {
+    background: url("../img/guide/kamikochi/icon_blank_hv.svg") no-repeat 0 0;
+    background-size: contain;
+  }
+  #guide-page .area-kamikochi .content-hotels__figure,
+  #guide-page .area-tateyama_kurobe .content-hotels__figure {
+    width: 100%;
+    height: 72.27vw;
+    overflow: hidden;
+  }
+  #guide-page .area-kamikochi .content-hotels__figureContainer,
+  #guide-page .area-tateyama_kurobe .content-hotels__figureContainer {
+    position: relative;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+  }
+  #guide-page .area-kamikochi .content-hotels__figureSlide,
+  #guide-page .area-tateyama_kurobe .content-hotels__figureSlide {
+    height: auto;
+  }
+  #guide-page .area-kamikochi .content-hotels__pagination,
+  #guide-page .area-tateyama_kurobe .content-hotels__pagination {
+    bottom: 2.67vw;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__container,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__container {
+    position: relative;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__inner,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__inner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 9.33vw 4.67vw;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__head span,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__head span {
+    font-size: 5.33vw;
+    line-height: 1;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__slide,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__slide {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__slide + .c-thumbSlider__slide,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__slide + .c-thumbSlider__slide {
+    margin-left: 0;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__slide__img,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__slide__img {
+    display: inline-block;
+    width: 53.33vw;
+    height: 48.67vw;
+    overflow: hidden;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__slide__img img,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__slide__img img {
+    width: 100%;
+    height: auto;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__slide__img.is-wide img,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__slide__img.is-wide img {
+    width: auto;
+    height: 100%;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__slide__img.is-long img,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__slide__img.is-long img {
+    width: 100%;
+    height: auto;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__slide__head,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__slide__head {
+    width: 100%;
+    margin: 10px auto 0;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__slide__head span,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__slide__head span {
+    font-size: 5.33vw;
+    line-height: 1;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__slide__link,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__slide__link {
+    display: none;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__arrow,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__arrow {
+    top: 48.67vw;
+    width: 3.73vw;
+    height: 5.87vw;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__arrow-prev,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__arrow-prev {
+    left: 30px;
+    left: 8.13333vw;
+    transform: rotate(180deg);
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__arrow-next,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__arrow-next {
+    right: 30px;
+    right: 8.13333vw;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__pagination,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__pagination {
+    position: static;
+    bottom: auto;
+    left: auto;
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__pagination .swiper-pagination-bullet,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__pagination .swiper-pagination-bullet {
+    margin: 0 1.33vw;
+    border: 2px solid #2c4197;
+    background-color: transparent;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  #guide-page .area-kamikochi .c-thumbSlider__pagination .swiper-pagination-bullet-active,
+  #guide-page .area-tateyama_kurobe .c-thumbSlider__pagination .swiper-pagination-bullet-active {
+    background-color: #2c4197;
+  }
+  #guide-page .area-kamikochi .content-where__map__img {
+    width: calc(100% - 4.67vw);
+  }
+  #guide-page .area-kamikochi .content-where__item-1 {
+    left: 8.67vw;
+    top: 45.33vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-2 {
+    left: 19.47vw;
+    top: 45.6vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-3 {
+    left: 33.6vw;
+    top: 34.93vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-4 {
+    left: 63.33vw;
+    top: 31.47vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-5 {
+    left: 21.33vw;
+    top: 33.6vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-6 {
+    left: 40.67vw;
+    top: 34vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-7 {
+    left: 38.27vw;
+    top: 34.67vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-8 {
+    left: 78.67vw;
+    top: 6.67vw;
+  }
+  #guide-page .area-kamikochi .content-where__item-9 {
+    left: 117.603vw;
+    top: 4vw;
+  }
+  #guide-page .area-kamikochi .content-routes__figure {
+    width: calc(100% + 4.67vw);
+  }
+  #guide-page .area-kamikochi .content-routes__figure-anchor--1 {
+    top: 0.27vw;
+  }
+  #guide-page .area-kamikochi .content-routes__figure-anchor--2 {
+    top: 6.4vw;
+  }
+  #guide-page .area-kamikochi .content-routes__figure-anchor--3 {
+    top: 13.07vw;
+  }
+  #guide-page .area-kamikochi .content-routes__figure-anchor--4 {
+    top: 17.33vw;
+  }
+  #guide-page .area-kamikochi .content-routes__figure-anchor--5 {
+    top: 21.87vw;
+  }
+  #guide-page .area-kamikochi .content-routes__figure-anchor--6 {
+    top: 34.93vw;
+  }
+  #guide-page .area-kamikochi .content-routes__figure-anchor--7 {
+    top: 40.53vw;
+  }
+  #guide-page .area-kamikochi .content-routes__figure-anchor--8 {
+    left: 57.2vw;
+    top: 27.87vw;
+  }
+  .is-TC#guide-page .area-tateyama_kurobe .mainVisual__titleWrapper,
+  .is-TH#guide-page .area-tateyama_kurobe .mainVisual__titleWrapper {
+    top: 29.33vw;
+  }
+  .is-TC#guide-page .area-tateyama_kurobe .mainVisual__title span,
+  .is-TH#guide-page .area-tateyama_kurobe .mainVisual__title span {
+    font-size: 6.67vw;
+  }
+  .is-TH#guide-page .area-tateyama_kurobe .mainVisual__title span {
+    font-size: 5.33vw;
+  }
+  #guide-page .area-tateyama_kurobe .mainVisual__titleWrapper {
+    top: 26.67vw;
+  }
+  #guide-page .area-tateyama_kurobe .mainVisual__title span {
+    font-size: 6.93vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-where__item-1 {
+    left: 37.33vw;
+    top: 18.67vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-where__item-2 {
+    left: 60.53vw;
+    top: 20.8vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-where__item-3 {
+    left: 36vw;
+    top: 18.67vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-where__item-4 {
+    left: 24.67vw;
+    top: 21.33vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-where__item-5 {
+    left: 44.53vw;
+    top: 19.47vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-where__map__img {
+    margin-bottom: 0;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor {
+    left: 16.8vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor--1 {
+    top: -0.4vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor--2 {
+    top: 3.47vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor--3 {
+    top: 6.93vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor--4 {
+    top: 14.13vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor--5 {
+    top: 18.4vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor--6 {
+    top: 26.93vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor--7 {
+    left: 62.93vw;
+    top: 3.73vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor--8 {
+    left: 52vw;
+    top: 8vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor--9 {
+    left: 52vw;
+    top: 18.4vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-routes__figure-anchor--10 {
+    left: 52vw;
+    top: 26.93vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__lead {
+    font-size: 5.33vw;
+    line-height: 8vw;
+    margin: 0 0 8vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__lead br {
+    display: none;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__inner {
+    max-width: 100%;
+    padding: 8vw 4vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 100%;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__box {
+    width: 100%;
+    height: 45.33vw;
+    border: 1.6vw solid #2b3e83;
+    padding: 5.33vw 0;
+    margin-bottom: 6vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__box--3 .content-recommended__title {
+    padding-top: 2.67vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__box--3 .content-recommended__title .content-recommended__figure img {
+    width: 27.47vw;
+    height: auto;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__box:after {
+    content: '';
+    clear: both;
+    height: 1px;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__figure {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center;
+    margin: 0;
+    position: relative;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__figure img {
+    margin: 0 auto;
+    width: 20.8vw;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__tag {
+    font-size: 2.93vw;
+    width: 24.4vw;
+    height: 11.2vw;
+    padding: 1.33vw 0 0;
+    left: -4vw;
+    top: -2.67vw;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__title {
+    font-size: 4vw;
+    line-height: 5.87vw;
+    margin: 0 0 2.67vw;
+    float: right;
+    width: 50%;
+  }
+  #guide-page .area-tateyama_kurobe .line-wrapper {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #guide-page .area-tateyama_kurobe .line-wrapper:after {
+    bottom: 0.53vw;
+    height: 0.93vw;
+  }
+  #guide-page .area-tateyama_kurobe .line-inner {
+    position: relative;
+    z-index: 1;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__text {
+    font-size: 2.67vw;
+    line-height: 3.73vw;
+    width: 50%;
+    padding-right: 5.33vw;
+    float: right;
+    clear: right;
+  }
+  #guide-page .area-tateyama_kurobe .content-recommended__text span {
+    font-size: 2.4vw;
+  }
+}
